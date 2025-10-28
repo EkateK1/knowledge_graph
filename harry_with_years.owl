@@ -1,450 +1,466 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#"
-     xml:base="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:harrypotter="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter"/>
-    
+Prefix(:=<http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(harrypotter:=<http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#>)
+
+
+Ontology(<http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter>
+
+Declaration(Class(harrypotter:Artifact))
+Declaration(Class(harrypotter:Battle))
+Declaration(Class(harrypotter:Big))
+Declaration(Class(harrypotter:Centaur))
+Declaration(Class(harrypotter:Character))
+Declaration(Class(harrypotter:Event))
+Declaration(Class(harrypotter:Fighting_with_Voldemort))
+Declaration(Class(harrypotter:Ghost))
+Declaration(Class(harrypotter:Giant))
+Declaration(Class(harrypotter:Giant_spider))
+Declaration(Class(harrypotter:Holiday))
+Declaration(Class(harrypotter:House))
+Declaration(Class(harrypotter:House_elf))
+Declaration(Class(harrypotter:Human))
+Declaration(Class(harrypotter:Location))
+Declaration(Class(harrypotter:Magical_creature))
+Declaration(Class(harrypotter:Mermaid))
+Declaration(Class(harrypotter:Muggle))
+Declaration(Class(harrypotter:Organization))
+Declaration(Class(harrypotter:Personate))
+Declaration(Class(harrypotter:Political))
+Declaration(Class(harrypotter:Potion))
+Declaration(Class(harrypotter:Role))
+Declaration(Class(harrypotter:Small))
+Declaration(Class(harrypotter:Spell))
+Declaration(Class(harrypotter:Sport))
+Declaration(Class(harrypotter:Squib))
+Declaration(Class(harrypotter:Wizard))
+Declaration(ObjectProperty(harrypotter:activeAt))
+Declaration(ObjectProperty(harrypotter:artifactInvolvedIn))
+Declaration(ObjectProperty(harrypotter:friendWith))
+Declaration(ObjectProperty(harrypotter:hasFather))
+Declaration(ObjectProperty(harrypotter:hasMother))
+Declaration(ObjectProperty(harrypotter:hasRole))
+Declaration(ObjectProperty(harrypotter:marriedWith))
+Declaration(ObjectProperty(harrypotter:memberOf))
+Declaration(ObjectProperty(harrypotter:participatedIn))
+Declaration(ObjectProperty(harrypotter:relativeOf))
+Declaration(ObjectProperty(harrypotter:romanceWith))
+Declaration(ObjectProperty(harrypotter:studiedAt))
+Declaration(ObjectProperty(harrypotter:takePartInEvent))
+Declaration(DataProperty(harrypotter:birthYear))
+Declaration(DataProperty(harrypotter:deathYear))
+Declaration(DataProperty(harrypotter:eventYear))
+Declaration(DataProperty(harrypotter:fullName))
+Declaration(DataProperty(harrypotter:gender))
+Declaration(DataProperty(harrypotter:houseAdmissionYear))
+Declaration(DataProperty(harrypotter:locationType))
+Declaration(DataProperty(harrypotter:schoolYear))
+Declaration(DataProperty(harrypotter:Дата))
+Declaration(NamedIndividual(harrypotter:Basilisk))
+Declaration(NamedIndividual(harrypotter:BattleOfDepartmentOfMysteries))
+Declaration(NamedIndividual(harrypotter:BattleOfHogwarts))
+Declaration(NamedIndividual(harrypotter:CedricDiggory))
+Declaration(NamedIndividual(harrypotter:ChamberOfSecretsEvent))
+Declaration(NamedIndividual(harrypotter:DeathEaters))
+Declaration(NamedIndividual(harrypotter:GodricsHollow))
+Declaration(NamedIndividual(harrypotter:Gryffindor))
+Declaration(NamedIndividual(harrypotter:HarryPotter))
+Declaration(NamedIndividual(harrypotter:Hogwarts))
+Declaration(NamedIndividual(harrypotter:Hufflepuff))
+Declaration(NamedIndividual(harrypotter:MinistryOfMagic))
+Declaration(NamedIndividual(harrypotter:NymphadoraTonks))
+Declaration(NamedIndividual(harrypotter:Ravenclaw))
+Declaration(NamedIndividual(harrypotter:RavenclawDiadem))
+Declaration(NamedIndividual(harrypotter:SiriusBlack))
+Declaration(NamedIndividual(harrypotter:Slytherin))
+Declaration(NamedIndividual(harrypotter:TriwizardTournament))
+Declaration(NamedIndividual(harrypotter:Преподаватель))
+Declaration(NamedIndividual(harrypotter:Сотрудник_министерства_магии))
+Declaration(NamedIndividual(harrypotter:Студент))
+Declaration(NamedIndividual(harrypotter:Член_Ордена_Феникса))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: harrypotter:activeAt (harrypotter:activeAt)
+
+ObjectPropertyDomain(harrypotter:activeAt harrypotter:Organization)
+ObjectPropertyRange(harrypotter:activeAt harrypotter:Location)
+
+# Object Property: harrypotter:artifactInvolvedIn (harrypotter:artifactInvolvedIn)
+
+ObjectPropertyDomain(harrypotter:artifactInvolvedIn harrypotter:Artifact)
+ObjectPropertyRange(harrypotter:artifactInvolvedIn harrypotter:Event)
+
+# Object Property: harrypotter:friendWith (harrypotter:friendWith)
+
+ObjectPropertyDomain(harrypotter:friendWith harrypotter:Character)
+ObjectPropertyRange(harrypotter:friendWith harrypotter:Character)
 
+# Object Property: harrypotter:hasFather (harrypotter:hasFather)
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+SubObjectPropertyOf(harrypotter:hasFather harrypotter:relativeOf)
+ObjectPropertyDomain(harrypotter:hasFather harrypotter:Character)
+ObjectPropertyRange(harrypotter:hasFather harrypotter:Character)
 
-    
+# Object Property: harrypotter:hasMother (harrypotter:hasMother)
 
+SubObjectPropertyOf(harrypotter:hasMother harrypotter:relativeOf)
+ObjectPropertyDomain(harrypotter:hasMother harrypotter:Character)
+ObjectPropertyRange(harrypotter:hasMother harrypotter:Character)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#activeAt -->
+# Object Property: harrypotter:hasRole (harrypotter:hasRole)
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#activeAt">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
-    </owl:ObjectProperty>
-    
+ObjectPropertyDomain(harrypotter:hasRole harrypotter:Character)
+ObjectPropertyRange(harrypotter:hasRole harrypotter:Role)
 
+# Object Property: harrypotter:marriedWith (harrypotter:marriedWith)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#artifactInvolvedIn -->
+SubObjectPropertyOf(harrypotter:marriedWith harrypotter:relativeOf)
+ObjectPropertyDomain(harrypotter:marriedWith harrypotter:Character)
+ObjectPropertyRange(harrypotter:marriedWith harrypotter:Character)
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#artifactInvolvedIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
-    </owl:ObjectProperty>
-    
+# Object Property: harrypotter:memberOf (harrypotter:memberOf)
 
+ObjectPropertyDomain(harrypotter:memberOf harrypotter:Character)
+ObjectPropertyRange(harrypotter:memberOf harrypotter:Organization)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#memberOf -->
+# Object Property: harrypotter:participatedIn (harrypotter:participatedIn)
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#memberOf">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization"/>
-    </owl:ObjectProperty>
-    
+ObjectPropertyDomain(harrypotter:participatedIn harrypotter:Character)
+ObjectPropertyRange(harrypotter:participatedIn harrypotter:Event)
 
+# Object Property: harrypotter:relativeOf (harrypotter:relativeOf)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#participatedIn -->
+SymmetricObjectProperty(harrypotter:relativeOf)
+ObjectPropertyDomain(harrypotter:relativeOf harrypotter:Character)
+ObjectPropertyRange(harrypotter:relativeOf harrypotter:Character)
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#participatedIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
-    </owl:ObjectProperty>
-    
+# Object Property: harrypotter:romanceWith (harrypotter:romanceWith)
 
+ObjectPropertyDomain(harrypotter:romanceWith harrypotter:Character)
+ObjectPropertyRange(harrypotter:romanceWith harrypotter:Character)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#relativeOf -->
+# Object Property: harrypotter:studiedAt (harrypotter:studiedAt)
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#relativeOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-    </owl:ObjectProperty>
-    
+ObjectPropertyDomain(harrypotter:studiedAt harrypotter:Character)
+ObjectPropertyRange(harrypotter:studiedAt harrypotter:House)
 
+# Object Property: harrypotter:takePartInEvent (harrypotter:takePartInEvent)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#studiedAt -->
+ObjectPropertyDomain(harrypotter:takePartInEvent harrypotter:Character)
+ObjectPropertyRange(harrypotter:takePartInEvent harrypotter:Event)
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#studiedAt">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
-    </owl:ObjectProperty>
-    
 
+############################
+#   Data Properties
+############################
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+# Data Property: harrypotter:birthYear (Год рождения)
 
-    
+AnnotationAssertion(rdfs:label harrypotter:birthYear "Год рождения")
+DataPropertyDomain(harrypotter:birthYear harrypotter:Character)
+DataPropertyRange(harrypotter:birthYear xsd:integer)
 
+# Data Property: harrypotter:deathYear (Год смерти)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#birthYear -->
+AnnotationAssertion(rdfs:label harrypotter:deathYear "Год смерти")
+DataPropertyDomain(harrypotter:deathYear harrypotter:Character)
+DataPropertyRange(harrypotter:deathYear xsd:integer)
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#birthYear">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>Год рождения</rdfs:label>
-    </owl:DatatypeProperty>
-    
+# Data Property: harrypotter:eventYear (Год события)
 
+AnnotationAssertion(rdfs:label harrypotter:eventYear "Год события")
+DataPropertyDomain(harrypotter:eventYear harrypotter:Event)
+DataPropertyRange(harrypotter:eventYear xsd:integer)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#deathYear -->
+# Data Property: harrypotter:fullName (Полное имя)
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#deathYear">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>Год смерти</rdfs:label>
-    </owl:DatatypeProperty>
-    
+AnnotationAssertion(rdfs:label harrypotter:fullName "Полное имя")
+DataPropertyDomain(harrypotter:fullName harrypotter:Character)
+DataPropertyRange(harrypotter:fullName xsd:string)
 
+# Data Property: harrypotter:gender (Пол)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#eventYear -->
+AnnotationAssertion(rdfs:label harrypotter:gender "Пол")
+DataPropertyDomain(harrypotter:gender harrypotter:Character)
+DataPropertyRange(harrypotter:gender xsd:string)
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#eventYear">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>Год события</rdfs:label>
-    </owl:DatatypeProperty>
-    
+# Data Property: harrypotter:houseAdmissionYear (Год поступления в Хогвартс)
 
+AnnotationAssertion(rdfs:label harrypotter:houseAdmissionYear "Год поступления в Хогвартс")
+DataPropertyDomain(harrypotter:houseAdmissionYear harrypotter:Character)
+DataPropertyRange(harrypotter:houseAdmissionYear xsd:integer)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#fullName -->
+# Data Property: harrypotter:locationType (Тип локации)
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#fullName">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>Полное имя</rdfs:label>
-    </owl:DatatypeProperty>
-    
+AnnotationAssertion(rdfs:label harrypotter:locationType "Тип локации")
+DataPropertyDomain(harrypotter:locationType harrypotter:Location)
+DataPropertyRange(harrypotter:locationType xsd:string)
 
+# Data Property: harrypotter:schoolYear (Год обучения)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#gender -->
+AnnotationAssertion(rdfs:label harrypotter:schoolYear "Год обучения")
+DataPropertyDomain(harrypotter:schoolYear harrypotter:Character)
+DataPropertyRange(harrypotter:schoolYear xsd:integer)
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#gender">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>Пол</rdfs:label>
-    </owl:DatatypeProperty>
-    
+# Data Property: harrypotter:Дата (harrypotter:Дата)
 
+DataPropertyDomain(harrypotter:Дата harrypotter:Event)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#houseAdmissionYear -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#houseAdmissionYear">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>Год поступления в Хогвартс</rdfs:label>
-    </owl:DatatypeProperty>
-    
 
+############################
+#   Classes
+############################
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#locationType -->
+# Class: harrypotter:Battle (harrypotter:Battle)
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#locationType">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>Тип локации</rdfs:label>
-    </owl:DatatypeProperty>
-    
+SubClassOf(harrypotter:Battle harrypotter:Big)
 
+# Class: harrypotter:Big (harrypotter:Big)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#schoolYear -->
+SubClassOf(harrypotter:Big harrypotter:Event)
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#schoolYear">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>Год обучения</rdfs:label>
-    </owl:DatatypeProperty>
-    
+# Class: harrypotter:Centaur (harrypotter:Centaur)
 
+SubClassOf(harrypotter:Centaur harrypotter:Magical_creature)
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+# Class: harrypotter:Fighting_with_Voldemort (harrypotter:Fighting_with_Voldemort)
 
-    
+SubClassOf(harrypotter:Fighting_with_Voldemort harrypotter:Big)
 
+# Class: harrypotter:Ghost (harrypotter:Ghost)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact -->
+SubClassOf(harrypotter:Ghost harrypotter:Magical_creature)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact"/>
-    
+# Class: harrypotter:Giant (harrypotter:Giant)
 
+SubClassOf(harrypotter:Giant harrypotter:Magical_creature)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character -->
+# Class: harrypotter:Giant_spider (harrypotter:Giant_spider)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-    
+SubClassOf(harrypotter:Giant_spider harrypotter:Magical_creature)
 
+# Class: harrypotter:Holiday (harrypotter:Holiday)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event -->
+SubClassOf(harrypotter:Holiday harrypotter:Big)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
-    
+# Class: harrypotter:House_elf (harrypotter:House_elf)
 
+SubClassOf(harrypotter:House_elf harrypotter:Magical_creature)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House -->
+# Class: harrypotter:Human (harrypotter:Human)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
-    
+SubClassOf(harrypotter:Human harrypotter:Character)
 
+# Class: harrypotter:Magical_creature (harrypotter:Magical_creature)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location -->
+SubClassOf(harrypotter:Magical_creature harrypotter:Character)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
-    
+# Class: harrypotter:Mermaid (harrypotter:Mermaid)
 
+SubClassOf(harrypotter:Mermaid harrypotter:Magical_creature)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization -->
+# Class: harrypotter:Muggle (harrypotter:Muggle)
 
-    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization"/>
-    
+SubClassOf(harrypotter:Muggle harrypotter:Human)
 
+# Class: harrypotter:Personate (harrypotter:Personate)
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+SubClassOf(harrypotter:Personate harrypotter:Small)
 
-    
+# Class: harrypotter:Political (harrypotter:Political)
 
+SubClassOf(harrypotter:Political harrypotter:Big)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Basilisk -->
+# Class: harrypotter:Small (harrypotter:Small)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Basilisk">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent"/>
-        <rdfs:label>Василиск</rdfs:label>
-    </owl:NamedIndividual>
-    
+SubClassOf(harrypotter:Small harrypotter:Event)
 
+# Class: harrypotter:Sport (harrypotter:Sport)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfDepartmentOfMysteries -->
+SubClassOf(harrypotter:Sport harrypotter:Big)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfDepartmentOfMysteries">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
-        <eventYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</eventYear>
-        <rdfs:label>Битва в Министерстве магии</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Class: harrypotter:Squib (harrypotter:Squib)
 
+SubClassOf(harrypotter:Squib harrypotter:Human)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts -->
+# Class: harrypotter:Wizard (harrypotter:Wizard)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
-        <eventYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</eventYear>
-        <rdfs:label>Битва за Хогвартс</rdfs:label>
-    </owl:NamedIndividual>
-    
+SubClassOf(harrypotter:Wizard harrypotter:Human)
 
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#CedricDiggory -->
+############################
+#   Named Individuals
+############################
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#CedricDiggory">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts"/>
-        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#TriwizardTournament"/>
-        <studiedAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff"/>
-        <birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</birthYear>
-        <deathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</deathYear>
-        <fullName>Седрик Амбри Диггори</fullName>
-        <gender>мужской</gender>
-        <houseAdmissionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1989</houseAdmissionYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</schoolYear>
-        <rdfs:label>Седрик Диггори</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: harrypotter:Basilisk (Василиск)
 
+AnnotationAssertion(rdfs:label harrypotter:Basilisk "Василиск")
+ClassAssertion(harrypotter:Character harrypotter:Basilisk)
+ObjectPropertyAssertion(harrypotter:participatedIn harrypotter:Basilisk harrypotter:ChamberOfSecretsEvent)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent -->
+# Individual: harrypotter:BattleOfDepartmentOfMysteries (Битва в Министерстве магии)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
-        <eventYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</eventYear>
-        <rdfs:label>Инцидент с Тайной комнатой</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label harrypotter:BattleOfDepartmentOfMysteries "Битва в Министерстве магии")
+ClassAssertion(harrypotter:Event harrypotter:BattleOfDepartmentOfMysteries)
+DataPropertyAssertion(harrypotter:eventYear harrypotter:BattleOfDepartmentOfMysteries "1996"^^xsd:integer)
 
+# Individual: harrypotter:BattleOfHogwarts (Битва за Хогвартс)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#DeathEaters -->
+AnnotationAssertion(rdfs:label harrypotter:BattleOfHogwarts "Битва за Хогвартс")
+ClassAssertion(harrypotter:Event harrypotter:BattleOfHogwarts)
+DataPropertyAssertion(harrypotter:eventYear harrypotter:BattleOfHogwarts "1998"^^xsd:integer)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#DeathEaters">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization"/>
-        <activeAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hogwarts"/>
-        <activeAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#MinistryOfMagic"/>
-        <rdfs:label>Пожиратели смерти</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: harrypotter:CedricDiggory (Седрик Диггори)
 
+AnnotationAssertion(rdfs:label harrypotter:CedricDiggory "Седрик Диггори")
+ClassAssertion(harrypotter:Character harrypotter:CedricDiggory)
+ObjectPropertyAssertion(harrypotter:participatedIn harrypotter:CedricDiggory harrypotter:BattleOfHogwarts)
+ObjectPropertyAssertion(harrypotter:participatedIn harrypotter:CedricDiggory harrypotter:TriwizardTournament)
+ObjectPropertyAssertion(harrypotter:studiedAt harrypotter:CedricDiggory harrypotter:Hufflepuff)
+DataPropertyAssertion(harrypotter:birthYear harrypotter:CedricDiggory "1977"^^xsd:integer)
+DataPropertyAssertion(harrypotter:deathYear harrypotter:CedricDiggory "1995"^^xsd:integer)
+DataPropertyAssertion(harrypotter:fullName harrypotter:CedricDiggory "Седрик Амбри Диггори")
+DataPropertyAssertion(harrypotter:gender harrypotter:CedricDiggory "мужской")
+DataPropertyAssertion(harrypotter:houseAdmissionYear harrypotter:CedricDiggory "1989"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:CedricDiggory "1991"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:CedricDiggory "1992"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:CedricDiggory "1993"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:CedricDiggory "1994"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:CedricDiggory "1995"^^xsd:integer)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#GodricsHollow -->
+# Individual: harrypotter:ChamberOfSecretsEvent (Инцидент с Тайной комнатой)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#GodricsHollow">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
-        <locationType>деревня</locationType>
-        <rdfs:label>Годрикова долина</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label harrypotter:ChamberOfSecretsEvent "Инцидент с Тайной комнатой")
+ClassAssertion(harrypotter:Event harrypotter:ChamberOfSecretsEvent)
+DataPropertyAssertion(harrypotter:eventYear harrypotter:ChamberOfSecretsEvent "1993"^^xsd:integer)
 
+# Individual: harrypotter:DeathEaters (Пожиратели смерти)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Gryffindor -->
+AnnotationAssertion(rdfs:label harrypotter:DeathEaters "Пожиратели смерти")
+ClassAssertion(harrypotter:Organization harrypotter:DeathEaters)
+ObjectPropertyAssertion(harrypotter:activeAt harrypotter:DeathEaters harrypotter:Hogwarts)
+ObjectPropertyAssertion(harrypotter:activeAt harrypotter:DeathEaters harrypotter:MinistryOfMagic)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Gryffindor">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
-        <rdfs:label>Гриффиндор</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: harrypotter:GodricsHollow (Годрикова долина)
 
+AnnotationAssertion(rdfs:label harrypotter:GodricsHollow "Годрикова долина")
+ClassAssertion(harrypotter:Location harrypotter:GodricsHollow)
+DataPropertyAssertion(harrypotter:locationType harrypotter:GodricsHollow "деревня")
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#HarryPotter -->
+# Individual: harrypotter:Gryffindor (Гриффиндор)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#HarryPotter">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts"/>
-        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent"/>
-        <studiedAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Gryffindor"/>
-        <birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</birthYear>
-        <deathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</deathYear>
-        <fullName>Гарри Джеймс Поттер</fullName>
-        <gender>мужской</gender>
-        <houseAdmissionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</houseAdmissionYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</schoolYear>
-        <rdfs:label>Гарри Поттер</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label harrypotter:Gryffindor "Гриффиндор")
+ClassAssertion(harrypotter:House harrypotter:Gryffindor)
 
+# Individual: harrypotter:HarryPotter (Гарри Поттер)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hogwarts -->
+AnnotationAssertion(rdfs:label harrypotter:HarryPotter "Гарри Поттер")
+ClassAssertion(harrypotter:Character harrypotter:HarryPotter)
+ObjectPropertyAssertion(harrypotter:participatedIn harrypotter:HarryPotter harrypotter:BattleOfHogwarts)
+ObjectPropertyAssertion(harrypotter:participatedIn harrypotter:HarryPotter harrypotter:ChamberOfSecretsEvent)
+ObjectPropertyAssertion(harrypotter:studiedAt harrypotter:HarryPotter harrypotter:Gryffindor)
+DataPropertyAssertion(harrypotter:birthYear harrypotter:HarryPotter "1980"^^xsd:integer)
+DataPropertyAssertion(harrypotter:deathYear harrypotter:HarryPotter "0"^^xsd:integer)
+DataPropertyAssertion(harrypotter:fullName harrypotter:HarryPotter "Гарри Джеймс Поттер")
+DataPropertyAssertion(harrypotter:gender harrypotter:HarryPotter "мужской")
+DataPropertyAssertion(harrypotter:houseAdmissionYear harrypotter:HarryPotter "1991"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:HarryPotter "1991"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:HarryPotter "1992"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:HarryPotter "1993"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:HarryPotter "1994"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:HarryPotter "1995"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:HarryPotter "1996"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:HarryPotter "1997"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:HarryPotter "1998"^^xsd:integer)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hogwarts">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
-        <locationType>школа</locationType>
-        <rdfs:label>Хогвартс</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: harrypotter:Hogwarts (Хогвартс)
 
+AnnotationAssertion(rdfs:label harrypotter:Hogwarts "Хогвартс")
+ClassAssertion(harrypotter:Location harrypotter:Hogwarts)
+DataPropertyAssertion(harrypotter:locationType harrypotter:Hogwarts "школа")
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff -->
+# Individual: harrypotter:Hufflepuff (Пуффендуй)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
-        <rdfs:label>Пуффендуй</rdfs:label>
-        <rdfs:label>Хаффлпаф</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label harrypotter:Hufflepuff "Пуффендуй")
+AnnotationAssertion(rdfs:label harrypotter:Hufflepuff "Хаффлпаф")
+ClassAssertion(harrypotter:House harrypotter:Hufflepuff)
 
+# Individual: harrypotter:MinistryOfMagic (Министерство магии)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#MinistryOfMagic -->
+AnnotationAssertion(rdfs:label harrypotter:MinistryOfMagic "Министерство магии")
+ClassAssertion(harrypotter:Location harrypotter:MinistryOfMagic)
+DataPropertyAssertion(harrypotter:locationType harrypotter:MinistryOfMagic "правительственное здание")
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#MinistryOfMagic">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
-        <locationType>правительственное здание</locationType>
-        <rdfs:label>Министерство магии</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: harrypotter:NymphadoraTonks (Нимфадора Тонкс)
 
+AnnotationAssertion(rdfs:label harrypotter:NymphadoraTonks "Нимфадора Тонкс")
+ClassAssertion(harrypotter:Character harrypotter:NymphadoraTonks)
+ObjectPropertyAssertion(harrypotter:participatedIn harrypotter:NymphadoraTonks harrypotter:BattleOfHogwarts)
+ObjectPropertyAssertion(harrypotter:studiedAt harrypotter:NymphadoraTonks harrypotter:Hufflepuff)
+DataPropertyAssertion(harrypotter:birthYear harrypotter:NymphadoraTonks "1973"^^xsd:integer)
+DataPropertyAssertion(harrypotter:deathYear harrypotter:NymphadoraTonks "1998"^^xsd:integer)
+DataPropertyAssertion(harrypotter:fullName harrypotter:NymphadoraTonks "Нимфадора Тонкс")
+DataPropertyAssertion(harrypotter:gender harrypotter:NymphadoraTonks "женский")
+DataPropertyAssertion(harrypotter:houseAdmissionYear harrypotter:NymphadoraTonks "1984"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:NymphadoraTonks "1991"^^xsd:integer)
+DataPropertyAssertion(harrypotter:schoolYear harrypotter:NymphadoraTonks "1992"^^xsd:integer)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#NymphadoraTonks -->
+# Individual: harrypotter:Ravenclaw (Рейвенкло)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#NymphadoraTonks">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts"/>
-        <studiedAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff"/>
-        <birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</birthYear>
-        <deathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</deathYear>
-        <fullName>Нимфадора Тонкс</fullName>
-        <gender>женский</gender>
-        <houseAdmissionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1984</houseAdmissionYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</schoolYear>
-        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</schoolYear>
-        <rdfs:label>Нимфадора Тонкс</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label harrypotter:Ravenclaw "Когтевран")
+AnnotationAssertion(rdfs:label harrypotter:Ravenclaw "Рейвенкло")
+ClassAssertion(harrypotter:House harrypotter:Ravenclaw)
 
+# Individual: harrypotter:RavenclawDiadem (Диадема Рэйвенкло)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Ravenclaw -->
+AnnotationAssertion(rdfs:label harrypotter:RavenclawDiadem "Диадема Рэйвенкло")
+ClassAssertion(harrypotter:Artifact harrypotter:RavenclawDiadem)
+ObjectPropertyAssertion(harrypotter:artifactInvolvedIn harrypotter:RavenclawDiadem harrypotter:BattleOfHogwarts)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Ravenclaw">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
-        <rdfs:label>Когтевран</rdfs:label>
-        <rdfs:label>Рейвенкло</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: harrypotter:SiriusBlack (Сириус Блэк)
 
+AnnotationAssertion(rdfs:label harrypotter:SiriusBlack "Сириус Блэк")
+ClassAssertion(harrypotter:Character harrypotter:SiriusBlack)
+ObjectPropertyAssertion(harrypotter:participatedIn harrypotter:SiriusBlack harrypotter:BattleOfDepartmentOfMysteries)
+ObjectPropertyAssertion(harrypotter:relativeOf harrypotter:SiriusBlack harrypotter:NymphadoraTonks)
+DataPropertyAssertion(harrypotter:birthYear harrypotter:SiriusBlack "1960"^^xsd:integer)
+DataPropertyAssertion(harrypotter:deathYear harrypotter:SiriusBlack "1996"^^xsd:integer)
+DataPropertyAssertion(harrypotter:fullName harrypotter:SiriusBlack "Сириус Орион Блэк")
+DataPropertyAssertion(harrypotter:gender harrypotter:SiriusBlack "мужской")
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#RavenclawDiadem -->
+# Individual: harrypotter:Slytherin (Слизерин)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#RavenclawDiadem">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact"/>
-        <artifactInvolvedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts"/>
-        <rdfs:label>Диадема Рэйвенкло</rdfs:label>
-    </owl:NamedIndividual>
-    
+AnnotationAssertion(rdfs:label harrypotter:Slytherin "Слизерин")
+ClassAssertion(harrypotter:House harrypotter:Slytherin)
 
+# Individual: harrypotter:TriwizardTournament (Турнир Трёх Волшебников)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#SiriusBlack -->
+AnnotationAssertion(rdfs:label harrypotter:TriwizardTournament "Турнир Трёх Волшебников")
+ClassAssertion(harrypotter:Event harrypotter:TriwizardTournament)
+DataPropertyAssertion(harrypotter:eventYear harrypotter:TriwizardTournament "1994"^^xsd:integer)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#SiriusBlack">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
-        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfDepartmentOfMysteries"/>
-        <relativeOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#NymphadoraTonks"/>
-        <birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</birthYear>
-        <deathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</deathYear>
-        <fullName>Сириус Орион Блэк</fullName>
-        <gender>мужской</gender>
-        <rdfs:label>Сириус Блэк</rdfs:label>
-    </owl:NamedIndividual>
-    
+# Individual: harrypotter:Преподаватель (harrypotter:Преподаватель)
 
+ClassAssertion(harrypotter:Role harrypotter:Преподаватель)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Slytherin -->
+# Individual: harrypotter:Сотрудник_министерства_магии (harrypotter:Сотрудник_министерства_магии)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Slytherin">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
-        <rdfs:label>Слизерин</rdfs:label>
-    </owl:NamedIndividual>
-    
+ClassAssertion(harrypotter:Role harrypotter:Сотрудник_министерства_магии)
 
+# Individual: harrypotter:Студент (harrypotter:Студент)
 
-    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#TriwizardTournament -->
+ClassAssertion(harrypotter:Role harrypotter:Студент)
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#TriwizardTournament">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
-        <eventYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</eventYear>
-        <rdfs:label>Турнир Трёх Волшебников</rdfs:label>
-    </owl:NamedIndividual>
-</rdf:RDF>
+# Individual: harrypotter:Член_Ордена_Феникса (harrypotter:Член_Ордена_Феникса)
 
+ClassAssertion(harrypotter:Role harrypotter:Член_Ордена_Феникса)
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-
+)
