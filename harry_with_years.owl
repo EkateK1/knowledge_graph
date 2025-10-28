@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:harrypotter="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#activeAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#activeAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#artifactInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#artifactInvolvedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#memberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#participatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#participatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#relativeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#relativeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#studiedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#studiedAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#birthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#birthYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>Год рождения</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#deathYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#deathYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>Год смерти</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#eventYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#eventYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>Год события</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#fullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#fullName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Полное имя</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Пол</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#houseAdmissionYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#houseAdmissionYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>Год поступления в Хогвартс</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#locationType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#locationType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>Тип локации</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#schoolYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#schoolYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>Год обучения</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Basilisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Basilisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent"/>
+        <rdfs:label>Василиск</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfDepartmentOfMysteries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfDepartmentOfMysteries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
+        <eventYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</eventYear>
+        <rdfs:label>Битва в Министерстве магии</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
+        <eventYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</eventYear>
+        <rdfs:label>Битва за Хогвартс</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#CedricDiggory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#CedricDiggory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#TriwizardTournament"/>
+        <studiedAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff"/>
+        <birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</birthYear>
+        <deathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</deathYear>
+        <fullName>Седрик Амбри Диггори</fullName>
+        <gender>мужской</gender>
+        <houseAdmissionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1989</houseAdmissionYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</schoolYear>
+        <rdfs:label>Седрик Диггори</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
+        <eventYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</eventYear>
+        <rdfs:label>Инцидент с Тайной комнатой</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#DeathEaters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#DeathEaters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization"/>
+        <activeAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hogwarts"/>
+        <activeAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#MinistryOfMagic"/>
+        <rdfs:label>Пожиратели смерти</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#GodricsHollow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#GodricsHollow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
+        <locationType>деревня</locationType>
+        <rdfs:label>Годрикова долина</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Gryffindor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Gryffindor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
+        <rdfs:label>Гриффиндор</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#HarryPotter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#HarryPotter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent"/>
+        <studiedAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Gryffindor"/>
+        <birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</birthYear>
+        <deathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</deathYear>
+        <fullName>Гарри Джеймс Поттер</fullName>
+        <gender>мужской</gender>
+        <houseAdmissionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</houseAdmissionYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</schoolYear>
+        <rdfs:label>Гарри Поттер</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hogwarts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hogwarts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
+        <locationType>школа</locationType>
+        <rdfs:label>Хогвартс</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
+        <rdfs:label>Пуффендуй</rdfs:label>
+        <rdfs:label>Хаффлпаф</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#MinistryOfMagic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#MinistryOfMagic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location"/>
+        <locationType>правительственное здание</locationType>
+        <rdfs:label>Министерство магии</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#NymphadoraTonks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#NymphadoraTonks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts"/>
+        <studiedAt rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff"/>
+        <birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</birthYear>
+        <deathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</deathYear>
+        <fullName>Нимфадора Тонкс</fullName>
+        <gender>женский</gender>
+        <houseAdmissionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1984</houseAdmissionYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</schoolYear>
+        <schoolYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</schoolYear>
+        <rdfs:label>Нимфадора Тонкс</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Ravenclaw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Ravenclaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
+        <rdfs:label>Когтевран</rdfs:label>
+        <rdfs:label>Рейвенкло</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#RavenclawDiadem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#RavenclawDiadem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact"/>
+        <artifactInvolvedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts"/>
+        <rdfs:label>Диадема Рэйвенкло</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#SiriusBlack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#SiriusBlack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfDepartmentOfMysteries"/>
+        <relativeOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#NymphadoraTonks"/>
+        <birthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</birthYear>
+        <deathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</deathYear>
+        <fullName>Сириус Орион Блэк</fullName>
+        <gender>мужской</gender>
+        <rdfs:label>Сириус Блэк</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Slytherin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Slytherin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House"/>
+        <rdfs:label>Слизерин</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#TriwizardTournament -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#TriwizardTournament">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event"/>
+        <eventYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</eventYear>
+        <rdfs:label>Турнир Трёх Волшебников</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
