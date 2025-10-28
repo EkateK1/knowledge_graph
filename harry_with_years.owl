@@ -50,6 +50,7 @@ Declaration(ObjectProperty(harrypotter:relativeOf))
 Declaration(ObjectProperty(harrypotter:romanceWith))
 Declaration(ObjectProperty(harrypotter:studiedAt))
 Declaration(ObjectProperty(harrypotter:takePartInEvent))
+Declaration(ObjectProperty(harrypotter:tookPlaceAt))
 Declaration(DataProperty(harrypotter:birthYear))
 Declaration(DataProperty(harrypotter:deathYear))
 Declaration(DataProperty(harrypotter:eventYear))
@@ -154,6 +155,11 @@ ObjectPropertyRange(harrypotter:studiedAt harrypotter:House)
 
 ObjectPropertyDomain(harrypotter:takePartInEvent harrypotter:Character)
 ObjectPropertyRange(harrypotter:takePartInEvent harrypotter:Event)
+
+# Object Property: harrypotter:tookPlaceAt (harrypotter:tookPlaceAt)
+
+ObjectPropertyDomain(harrypotter:tookPlaceAt harrypotter:Event)
+ObjectPropertyRange(harrypotter:tookPlaceAt harrypotter:Location)
 
 
 ############################
