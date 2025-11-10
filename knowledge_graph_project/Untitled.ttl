@@ -1,0 +1,493 @@
+@prefix : <http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix harrypotter: <http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#> .
+@base <http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#> .
+
+<http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#activeAt
+harrypotter:activeAt rdf:type owl:ObjectProperty ;
+                     rdfs:domain harrypotter:Organization ;
+                     rdfs:range harrypotter:Location .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#artifactInvolvedIn
+harrypotter:artifactInvolvedIn rdf:type owl:ObjectProperty ;
+                               rdfs:domain harrypotter:Artifact ;
+                               rdfs:range harrypotter:Event .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#friendWith
+harrypotter:friendWith rdf:type owl:ObjectProperty ;
+                       rdfs:domain harrypotter:Character ;
+                       rdfs:range harrypotter:Character .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#hasFather
+harrypotter:hasFather rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf harrypotter:relativeOf ;
+                      rdfs:domain harrypotter:Character ;
+                      rdfs:range harrypotter:Character .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#hasMother
+harrypotter:hasMother rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf harrypotter:relativeOf ;
+                      rdfs:domain harrypotter:Character ;
+                      rdfs:range harrypotter:Character .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#hasRole
+harrypotter:hasRole rdf:type owl:ObjectProperty ;
+                    rdfs:domain harrypotter:Character ;
+                    rdfs:range harrypotter:Role .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#marriedWith
+harrypotter:marriedWith rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf harrypotter:relativeOf ;
+                        rdfs:domain harrypotter:Character ;
+                        rdfs:range harrypotter:Character .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#memberOf
+harrypotter:memberOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain harrypotter:Character ;
+                     rdfs:range harrypotter:Organization .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#participatedIn
+harrypotter:participatedIn rdf:type owl:ObjectProperty ;
+                           rdfs:domain harrypotter:Character ;
+                           rdfs:range harrypotter:Event .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#relativeOf
+harrypotter:relativeOf rdf:type owl:ObjectProperty ,
+                                owl:SymmetricProperty ;
+                       rdfs:domain harrypotter:Character ;
+                       rdfs:range harrypotter:Character .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#romanceWith
+harrypotter:romanceWith rdf:type owl:ObjectProperty ;
+                        rdfs:domain harrypotter:Character ;
+                        rdfs:range harrypotter:Character .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#studiedAt
+harrypotter:studiedAt rdf:type owl:ObjectProperty ;
+                      rdfs:domain harrypotter:Character ;
+                      rdfs:range harrypotter:House .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#takePartInEvent
+harrypotter:takePartInEvent rdf:type owl:ObjectProperty ;
+                            rdfs:domain harrypotter:Character ;
+                            rdfs:range harrypotter:Event .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#tookPlaceAt
+harrypotter:tookPlaceAt rdf:type owl:ObjectProperty ;
+                        rdfs:domain harrypotter:Event ;
+                        rdfs:range harrypotter:Location .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#birthYear
+harrypotter:birthYear rdf:type owl:DatatypeProperty ;
+                      rdfs:domain harrypotter:Character ;
+                      rdfs:range xsd:integer ;
+                      rdfs:label "Год рождения" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#deathYear
+harrypotter:deathYear rdf:type owl:DatatypeProperty ;
+                      rdfs:domain harrypotter:Character ;
+                      rdfs:range xsd:integer ;
+                      rdfs:label "Год смерти" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#eventYear
+harrypotter:eventYear rdf:type owl:DatatypeProperty ;
+                      rdfs:domain harrypotter:Event ;
+                      rdfs:range xsd:integer ;
+                      rdfs:label "Год события" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#fullName
+harrypotter:fullName rdf:type owl:DatatypeProperty ;
+                     rdfs:domain harrypotter:Character ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "Полное имя" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#gender
+harrypotter:gender rdf:type owl:DatatypeProperty ;
+                   rdfs:domain harrypotter:Character ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "Пол" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#houseAdmissionYear
+harrypotter:houseAdmissionYear rdf:type owl:DatatypeProperty ;
+                               rdfs:domain harrypotter:Character ;
+                               rdfs:range xsd:integer ;
+                               rdfs:label "Год поступления в Хогвартс" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#locationType
+harrypotter:locationType rdf:type owl:DatatypeProperty ;
+                         rdfs:domain harrypotter:Location ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "Тип локации" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#schoolYear
+harrypotter:schoolYear rdf:type owl:DatatypeProperty ;
+                       rdfs:domain harrypotter:Character ;
+                       rdfs:range xsd:integer ;
+                       rdfs:label "Год обучения" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Дата
+harrypotter:Дата rdf:type owl:DatatypeProperty ;
+                 rdfs:domain harrypotter:Event .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Artifact
+harrypotter:Artifact rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Battle
+harrypotter:Battle rdf:type owl:Class ;
+                   rdfs:subClassOf harrypotter:Big .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Big
+harrypotter:Big rdf:type owl:Class ;
+                rdfs:subClassOf harrypotter:Event .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Centaur
+harrypotter:Centaur rdf:type owl:Class ;
+                    rdfs:subClassOf harrypotter:Magical_creature .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Character
+harrypotter:Character rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Event
+harrypotter:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Fighting_with_Voldemort
+harrypotter:Fighting_with_Voldemort rdf:type owl:Class ;
+                                    rdfs:subClassOf harrypotter:Big .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Ghost
+harrypotter:Ghost rdf:type owl:Class ;
+                  rdfs:subClassOf harrypotter:Magical_creature .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Giant
+harrypotter:Giant rdf:type owl:Class ;
+                  rdfs:subClassOf harrypotter:Magical_creature .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Giant_spider
+harrypotter:Giant_spider rdf:type owl:Class ;
+                         rdfs:subClassOf harrypotter:Magical_creature .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Holiday
+harrypotter:Holiday rdf:type owl:Class ;
+                    rdfs:subClassOf harrypotter:Big .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House
+harrypotter:House rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#House_elf
+harrypotter:House_elf rdf:type owl:Class ;
+                      rdfs:subClassOf harrypotter:Magical_creature .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Human
+harrypotter:Human rdf:type owl:Class ;
+                  rdfs:subClassOf harrypotter:Character .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Location
+harrypotter:Location rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Magical_creature
+harrypotter:Magical_creature rdf:type owl:Class ;
+                             rdfs:subClassOf harrypotter:Character .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Mermaid
+harrypotter:Mermaid rdf:type owl:Class ;
+                    rdfs:subClassOf harrypotter:Magical_creature .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Muggle
+harrypotter:Muggle rdf:type owl:Class ;
+                   rdfs:subClassOf harrypotter:Human .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Organization
+harrypotter:Organization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Personate
+harrypotter:Personate rdf:type owl:Class ;
+                      rdfs:subClassOf harrypotter:Small .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Political
+harrypotter:Political rdf:type owl:Class ;
+                      rdfs:subClassOf harrypotter:Big .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Potion
+harrypotter:Potion rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Role
+harrypotter:Role rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Small
+harrypotter:Small rdf:type owl:Class ;
+                  rdfs:subClassOf harrypotter:Event .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Spell
+harrypotter:Spell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Sport
+harrypotter:Sport rdf:type owl:Class ;
+                  rdfs:subClassOf harrypotter:Big .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Squib
+harrypotter:Squib rdf:type owl:Class ;
+                  rdfs:subClassOf harrypotter:Human .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Wizard
+harrypotter:Wizard rdf:type owl:Class ;
+                   rdfs:subClassOf harrypotter:Human .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Basilisk
+harrypotter:Basilisk rdf:type owl:NamedIndividual ,
+                              harrypotter:Character ;
+                     harrypotter:participatedIn harrypotter:ChamberOfSecretsEvent ;
+                     rdfs:label "Василиск" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfDepartmentOfMysteries
+harrypotter:BattleOfDepartmentOfMysteries rdf:type owl:NamedIndividual ,
+                                                   harrypotter:Event ;
+                                          harrypotter:eventYear 1996 ;
+                                          rdfs:label "Битва в Министерстве магии" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#BattleOfHogwarts
+harrypotter:BattleOfHogwarts rdf:type owl:NamedIndividual ,
+                                      harrypotter:Event ;
+                             harrypotter:eventYear 1998 ;
+                             rdfs:label "Битва за Хогвартс" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#CedricDiggory
+harrypotter:CedricDiggory rdf:type owl:NamedIndividual ,
+                                   harrypotter:Character ;
+                          harrypotter:participatedIn harrypotter:BattleOfHogwarts ,
+                                                     harrypotter:TriwizardTournament ;
+                          harrypotter:studiedAt harrypotter:Hufflepuff ;
+                          harrypotter:birthYear 1977 ;
+                          harrypotter:deathYear 1995 ;
+                          harrypotter:fullName "Седрик Амбри Диггори" ;
+                          harrypotter:gender "мужской" ;
+                          harrypotter:houseAdmissionYear 1989 ;
+                          harrypotter:schoolYear 1991 ,
+                                                 1992 ,
+                                                 1993 ,
+                                                 1994 ,
+                                                 1995 ;
+                          rdfs:label "Седрик Диггори" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#ChamberOfSecretsEvent
+harrypotter:ChamberOfSecretsEvent rdf:type owl:NamedIndividual ,
+                                           harrypotter:Event ;
+                                  harrypotter:eventYear 1993 ;
+                                  rdfs:label "Инцидент с Тайной комнатой" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#DeathEaters
+harrypotter:DeathEaters rdf:type owl:NamedIndividual ,
+                                 harrypotter:Organization ;
+                        harrypotter:activeAt harrypotter:Hogwarts ,
+                                             harrypotter:MinistryOfMagic ;
+                        rdfs:label "Пожиратели смерти" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#GodricsHollow
+harrypotter:GodricsHollow rdf:type owl:NamedIndividual ,
+                                   harrypotter:Location ;
+                          harrypotter:locationType "деревня" ;
+                          rdfs:label "Годрикова долина" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Gryffindor
+harrypotter:Gryffindor rdf:type owl:NamedIndividual ,
+                                harrypotter:House ;
+                       rdfs:label "Гриффиндор" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#HarryPotter
+harrypotter:HarryPotter rdf:type owl:NamedIndividual ,
+                                 harrypotter:Character ;
+                        harrypotter:participatedIn harrypotter:BattleOfHogwarts ,
+                                                   harrypotter:ChamberOfSecretsEvent ;
+                        harrypotter:studiedAt harrypotter:Gryffindor ;
+                        harrypotter:birthYear 1980 ;
+                        harrypotter:deathYear 0 ;
+                        harrypotter:fullName "Гарри Джеймс Поттер" ;
+                        harrypotter:gender "мужской" ;
+                        harrypotter:houseAdmissionYear 1991 ;
+                        harrypotter:schoolYear 1991 ,
+                                               1992 ,
+                                               1993 ,
+                                               1994 ,
+                                               1995 ,
+                                               1996 ,
+                                               1997 ,
+                                               1998 ;
+                        rdfs:label "Гарри Поттер" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hogwarts
+harrypotter:Hogwarts rdf:type owl:NamedIndividual ,
+                              harrypotter:Location ;
+                     harrypotter:locationType "школа" ;
+                     rdfs:label "Хогвартс" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Hufflepuff
+harrypotter:Hufflepuff rdf:type owl:NamedIndividual ,
+                                harrypotter:House ;
+                       rdfs:label "Пуффендуй" ,
+                                  "Хаффлпаф" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#MinistryOfMagic
+harrypotter:MinistryOfMagic rdf:type owl:NamedIndividual ,
+                                     harrypotter:Location ;
+                            harrypotter:locationType "правительственное здание" ;
+                            rdfs:label "Министерство магии" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#NymphadoraTonks
+harrypotter:NymphadoraTonks rdf:type owl:NamedIndividual ,
+                                     harrypotter:Character ;
+                            harrypotter:participatedIn harrypotter:BattleOfHogwarts ;
+                            harrypotter:studiedAt harrypotter:Hufflepuff ;
+                            harrypotter:birthYear 1973 ;
+                            harrypotter:deathYear 1998 ;
+                            harrypotter:fullName "Нимфадора Тонкс" ;
+                            harrypotter:gender "женский" ;
+                            harrypotter:houseAdmissionYear 1984 ;
+                            harrypotter:schoolYear 1991 ,
+                                                   1992 ;
+                            rdfs:label "Нимфадора Тонкс" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Ravenclaw
+harrypotter:Ravenclaw rdf:type owl:NamedIndividual ,
+                               harrypotter:House ;
+                      rdfs:label "Когтевран" ,
+                                 "Рейвенкло" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#RavenclawDiadem
+harrypotter:RavenclawDiadem rdf:type owl:NamedIndividual ,
+                                     harrypotter:Artifact ;
+                            harrypotter:artifactInvolvedIn harrypotter:BattleOfHogwarts ;
+                            rdfs:label "Диадема Рэйвенкло" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#SiriusBlack
+harrypotter:SiriusBlack rdf:type owl:NamedIndividual ,
+                                 harrypotter:Character ;
+                        harrypotter:participatedIn harrypotter:BattleOfDepartmentOfMysteries ;
+                        harrypotter:relativeOf harrypotter:NymphadoraTonks ;
+                        harrypotter:birthYear 1960 ;
+                        harrypotter:deathYear 1996 ;
+                        harrypotter:fullName "Сириус Орион Блэк" ;
+                        harrypotter:gender "мужской" ;
+                        rdfs:label "Сириус Блэк" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Slytherin
+harrypotter:Slytherin rdf:type owl:NamedIndividual ,
+                               harrypotter:House ;
+                      rdfs:label "Слизерин" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#TriwizardTournament
+harrypotter:TriwizardTournament rdf:type owl:NamedIndividual ,
+                                         harrypotter:Event ;
+                                harrypotter:eventYear 1994 ;
+                                rdfs:label "Турнир Трёх Волшебников" .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Преподаватель
+harrypotter:Преподаватель rdf:type owl:NamedIndividual ,
+                                   harrypotter:Role .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Сотрудник_министерства_магии
+harrypotter:Сотрудник_министерства_магии rdf:type owl:NamedIndividual ,
+                                                  harrypotter:Role .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Студент
+harrypotter:Студент rdf:type owl:NamedIndividual ,
+                             harrypotter:Role .
+
+
+###  http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#Член_Ордена_Феникса
+harrypotter:Член_Ордена_Феникса rdf:type owl:NamedIndividual ,
+                                         harrypotter:Role .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

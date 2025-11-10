@@ -1,0 +1,392 @@
+@prefix ex: <http://www.semanticweb.org/ekaterinakulesova/ontologies/2025/0/harry_potter#> .
+@prefix harrypotter: <http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Albus_Dumbledore a ex:Human ;
+    rdfs:label "Albus Dumbledore" ;
+    ex:memberOf ex:25,
+        ex:Gryffindor .
+
+ex:Harry_Potter a ex:Human ;
+    rdfs:label "Harry Potter" ;
+    ex:memberOf ex:56,
+        ex:Gryffindor .
+
+ex:Hermione_Granger a ex:Human ;
+    rdfs:label "Hermione Granger" ;
+    ex:memberOf ex:26,
+        ex:Gryffindor .
+
+ex:Hogwarts_School_of_Witchcraft_and_Wizardry a ex:Organization ;
+    rdfs:label "Hogwarts School of Witchcraft and Wizardry" ;
+    ex:memberOf ex:4,
+        ex:British_Ministry_of_Magic,
+        ex:Educational_Office,
+        ex:International_Confederation_of_Wizards .
+
+ex:Ronald_Weasley a ex:Human ;
+    rdfs:label "Ronald Weasley" ;
+    ex:memberOf ex:12,
+        ex:Gryffindor .
+
+ex:Severus_Snape a ex:Human ;
+    rdfs:label "Severus Snape" ;
+    ex:memberOf ex:17,
+        ex:Slytherin .
+
+<http://www.semanticweb.org/hp/ontologies/2025/10/harrypotter> a owl:Ontology .
+
+harrypotter:Basilisk a harrypotter:Character,
+        owl:NamedIndividual ;
+    rdfs:label "Василиск" ;
+    harrypotter:participatedIn harrypotter:ChamberOfSecretsEvent .
+
+harrypotter:Battle a owl:Class ;
+    rdfs:subClassOf harrypotter:Big .
+
+harrypotter:CedricDiggory a harrypotter:Character,
+        owl:NamedIndividual ;
+    rdfs:label "Седрик Диггори" ;
+    harrypotter:birthYear 1977 ;
+    harrypotter:deathYear 1995 ;
+    harrypotter:fullName "Седрик Амбри Диггори" ;
+    harrypotter:gender "мужской" ;
+    harrypotter:houseAdmissionYear 1989 ;
+    harrypotter:participatedIn harrypotter:BattleOfHogwarts,
+        harrypotter:TriwizardTournament ;
+    harrypotter:schoolYear 1991,
+        1992,
+        1993,
+        1994,
+        1995 ;
+    harrypotter:studiedAt harrypotter:Hufflepuff .
+
+harrypotter:Centaur a owl:Class ;
+    rdfs:subClassOf harrypotter:Magical_creature .
+
+harrypotter:DeathEaters a harrypotter:Organization,
+        owl:NamedIndividual ;
+    rdfs:label "Пожиратели смерти" ;
+    harrypotter:activeAt harrypotter:Hogwarts,
+        harrypotter:MinistryOfMagic .
+
+harrypotter:Fighting_with_Voldemort a owl:Class ;
+    rdfs:subClassOf harrypotter:Big .
+
+harrypotter:Ghost a owl:Class ;
+    rdfs:subClassOf harrypotter:Magical_creature .
+
+harrypotter:Giant a owl:Class ;
+    rdfs:subClassOf harrypotter:Magical_creature .
+
+harrypotter:Giant_spider a owl:Class ;
+    rdfs:subClassOf harrypotter:Magical_creature .
+
+harrypotter:GodricsHollow a harrypotter:Location,
+        owl:NamedIndividual ;
+    rdfs:label "Годрикова долина" ;
+    harrypotter:locationType "деревня" .
+
+harrypotter:HarryPotter a harrypotter:Character,
+        owl:NamedIndividual ;
+    rdfs:label "Гарри Поттер" ;
+    harrypotter:birthYear 1980 ;
+    harrypotter:deathYear 0 ;
+    harrypotter:fullName "Гарри Джеймс Поттер" ;
+    harrypotter:gender "мужской" ;
+    harrypotter:houseAdmissionYear 1991 ;
+    harrypotter:participatedIn harrypotter:BattleOfHogwarts,
+        harrypotter:ChamberOfSecretsEvent ;
+    harrypotter:schoolYear 1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998 ;
+    harrypotter:studiedAt harrypotter:Gryffindor .
+
+harrypotter:Holiday a owl:Class ;
+    rdfs:subClassOf harrypotter:Big .
+
+harrypotter:House_elf a owl:Class ;
+    rdfs:subClassOf harrypotter:Magical_creature .
+
+harrypotter:Mermaid a owl:Class ;
+    rdfs:subClassOf harrypotter:Magical_creature .
+
+harrypotter:Muggle a owl:Class ;
+    rdfs:subClassOf harrypotter:Human .
+
+harrypotter:Personate a owl:Class ;
+    rdfs:subClassOf harrypotter:Small .
+
+harrypotter:Political a owl:Class ;
+    rdfs:subClassOf harrypotter:Big .
+
+harrypotter:Potion a owl:Class .
+
+harrypotter:Ravenclaw a harrypotter:House,
+        owl:NamedIndividual ;
+    rdfs:label "Когтевран",
+        "Рейвенкло" .
+
+harrypotter:RavenclawDiadem a harrypotter:Artifact,
+        owl:NamedIndividual ;
+    rdfs:label "Диадема Рэйвенкло" ;
+    harrypotter:artifactInvolvedIn harrypotter:BattleOfHogwarts .
+
+harrypotter:SiriusBlack a harrypotter:Character,
+        owl:NamedIndividual ;
+    rdfs:label "Сириус Блэк" ;
+    harrypotter:birthYear 1960 ;
+    harrypotter:deathYear 1996 ;
+    harrypotter:fullName "Сириус Орион Блэк" ;
+    harrypotter:gender "мужской" ;
+    harrypotter:participatedIn harrypotter:BattleOfDepartmentOfMysteries ;
+    harrypotter:relativeOf harrypotter:NymphadoraTonks .
+
+harrypotter:Slytherin a harrypotter:House,
+        owl:NamedIndividual ;
+    rdfs:label "Слизерин" .
+
+harrypotter:Spell a owl:Class .
+
+harrypotter:Sport a owl:Class ;
+    rdfs:subClassOf harrypotter:Big .
+
+harrypotter:Squib a owl:Class ;
+    rdfs:subClassOf harrypotter:Human .
+
+harrypotter:Wizard a owl:Class ;
+    rdfs:subClassOf harrypotter:Human .
+
+harrypotter:activeAt a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Organization ;
+    rdfs:range harrypotter:Location .
+
+harrypotter:artifactInvolvedIn a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Artifact ;
+    rdfs:range harrypotter:Event .
+
+harrypotter:birthYear a owl:DatatypeProperty ;
+    rdfs:label "Год рождения" ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range xsd:integer .
+
+harrypotter:deathYear a owl:DatatypeProperty ;
+    rdfs:label "Год смерти" ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range xsd:integer .
+
+harrypotter:eventYear a owl:DatatypeProperty ;
+    rdfs:label "Год события" ;
+    rdfs:domain harrypotter:Event ;
+    rdfs:range xsd:integer .
+
+harrypotter:friendWith a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Character .
+
+harrypotter:fullName a owl:DatatypeProperty ;
+    rdfs:label "Полное имя" ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range xsd:string .
+
+harrypotter:gender a owl:DatatypeProperty ;
+    rdfs:label "Пол" ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range xsd:string .
+
+harrypotter:hasFather a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Character ;
+    rdfs:subPropertyOf harrypotter:relativeOf .
+
+harrypotter:hasMother a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Character ;
+    rdfs:subPropertyOf harrypotter:relativeOf .
+
+harrypotter:hasRole a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Role .
+
+harrypotter:houseAdmissionYear a owl:DatatypeProperty ;
+    rdfs:label "Год поступления в Хогвартс" ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range xsd:integer .
+
+harrypotter:locationType a owl:DatatypeProperty ;
+    rdfs:label "Тип локации" ;
+    rdfs:domain harrypotter:Location ;
+    rdfs:range xsd:string .
+
+harrypotter:marriedWith a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Character ;
+    rdfs:subPropertyOf harrypotter:relativeOf .
+
+harrypotter:memberOf a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Organization .
+
+harrypotter:participatedIn a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Event .
+
+harrypotter:romanceWith a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Character .
+
+harrypotter:schoolYear a owl:DatatypeProperty ;
+    rdfs:label "Год обучения" ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range xsd:integer .
+
+harrypotter:studiedAt a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:House .
+
+harrypotter:takePartInEvent a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Event .
+
+harrypotter:tookPlaceAt a owl:ObjectProperty ;
+    rdfs:domain harrypotter:Event ;
+    rdfs:range harrypotter:Location .
+
+harrypotter:Дата a owl:DatatypeProperty ;
+    rdfs:domain harrypotter:Event .
+
+harrypotter:Преподаватель a harrypotter:Role,
+        owl:NamedIndividual .
+
+harrypotter:Сотрудник_министерства_магии a harrypotter:Role,
+        owl:NamedIndividual .
+
+harrypotter:Студент a harrypotter:Role,
+        owl:NamedIndividual .
+
+harrypotter:Член_Ордена_Феникса a harrypotter:Role,
+        owl:NamedIndividual .
+
+ex:12 a ex:House ;
+    rdfs:label "[ 12 ]" .
+
+ex:17 a ex:House ;
+    rdfs:label "[ 17 ]" .
+
+ex:25 a ex:House ;
+    rdfs:label "[ 25 ]" .
+
+ex:26 a ex:House ;
+    rdfs:label "[ 26 ]" .
+
+ex:4 a ex:Organization ;
+    rdfs:label "[ 4 ]" .
+
+ex:56 a ex:House ;
+    rdfs:label "[ 56 ]" .
+
+ex:British_Ministry_of_Magic a ex:Organization ;
+    rdfs:label "British Ministry of Magic" .
+
+ex:Educational_Office a ex:Organization ;
+    rdfs:label "Educational Office" .
+
+ex:International_Confederation_of_Wizards a ex:Organization ;
+    rdfs:label "International Confederation of Wizards" .
+
+ex:Slytherin a ex:House ;
+    rdfs:label "Slytherin" .
+
+harrypotter:BattleOfDepartmentOfMysteries a harrypotter:Event,
+        owl:NamedIndividual ;
+    rdfs:label "Битва в Министерстве магии" ;
+    harrypotter:eventYear 1996 .
+
+harrypotter:Gryffindor a harrypotter:House,
+        owl:NamedIndividual ;
+    rdfs:label "Гриффиндор" .
+
+harrypotter:Hogwarts a harrypotter:Location,
+        owl:NamedIndividual ;
+    rdfs:label "Хогвартс" ;
+    harrypotter:locationType "школа" .
+
+harrypotter:MinistryOfMagic a harrypotter:Location,
+        owl:NamedIndividual ;
+    rdfs:label "Министерство магии" ;
+    harrypotter:locationType "правительственное здание" .
+
+harrypotter:NymphadoraTonks a harrypotter:Character,
+        owl:NamedIndividual ;
+    rdfs:label "Нимфадора Тонкс" ;
+    harrypotter:birthYear 1973 ;
+    harrypotter:deathYear 1998 ;
+    harrypotter:fullName "Нимфадора Тонкс" ;
+    harrypotter:gender "женский" ;
+    harrypotter:houseAdmissionYear 1984 ;
+    harrypotter:participatedIn harrypotter:BattleOfHogwarts ;
+    harrypotter:schoolYear 1991,
+        1992 ;
+    harrypotter:studiedAt harrypotter:Hufflepuff .
+
+harrypotter:Small a owl:Class ;
+    rdfs:subClassOf harrypotter:Event .
+
+harrypotter:TriwizardTournament a harrypotter:Event,
+        owl:NamedIndividual ;
+    rdfs:label "Турнир Трёх Волшебников" ;
+    harrypotter:eventYear 1994 .
+
+harrypotter:Artifact a owl:Class .
+
+harrypotter:ChamberOfSecretsEvent a harrypotter:Event,
+        owl:NamedIndividual ;
+    rdfs:label "Инцидент с Тайной комнатой" ;
+    harrypotter:eventYear 1993 .
+
+harrypotter:Hufflepuff a harrypotter:House,
+        owl:NamedIndividual ;
+    rdfs:label "Пуффендуй",
+        "Хаффлпаф" .
+
+harrypotter:Human a owl:Class ;
+    rdfs:subClassOf harrypotter:Character .
+
+harrypotter:Organization a owl:Class .
+
+harrypotter:relativeOf a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain harrypotter:Character ;
+    rdfs:range harrypotter:Character .
+
+ex:Gryffindor a ex:House ;
+    rdfs:label "Gryffindor" .
+
+harrypotter:BattleOfHogwarts a harrypotter:Event,
+        owl:NamedIndividual ;
+    rdfs:label "Битва за Хогвартс" ;
+    harrypotter:eventYear 1998 .
+
+harrypotter:Big a owl:Class ;
+    rdfs:subClassOf harrypotter:Event .
+
+harrypotter:House a owl:Class .
+
+harrypotter:Role a owl:Class .
+
+harrypotter:Location a owl:Class .
+
+harrypotter:Magical_creature a owl:Class ;
+    rdfs:subClassOf harrypotter:Character .
+
+harrypotter:Event a owl:Class .
+
+harrypotter:Character a owl:Class .
+
