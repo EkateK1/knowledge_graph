@@ -1,0 +1,2280 @@
+@prefix hpo: <http://www.semanticweb.org/ekaterinakulesova/ontologies/2025/0/harry_potter#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+hpo:Aberfort_Dambldor a hpo:Wizard ;
+    rdfs:label "Аберфорт Дамблдор"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Aberneti a hpo:Wizard ;
+    rdfs:label "Абернэти"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Abrakham_Grimblkhok a hpo:Wizard ;
+    rdfs:label "Абрахам Гримблхок"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Abrakham_Ronen a hpo:Wizard ;
+    rdfs:label "Абрахам Ронен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Adam_Arterius a hpo:Wizard ;
+    rdfs:label "Адам Артериус"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Adrian a hpo:Wizard ;
+    rdfs:label "Адриан"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Agentstvo_po_zashchite_magicheskoi_sekretnosti a hpo:Organization ;
+    rdfs:label "Агентство по защите магической секретности"@ru .
+
+hpo:Agnes a hpo:Wizard ;
+    rdfs:label "Агнес"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Akromantul a hpo:Wizard ;
+    rdfs:label "Акромантул"@ru .
+
+hpo:Alannis a hpo:Wizard ;
+    rdfs:label "Аланнис"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Alanza_Alves a hpo:Wizard ;
+    rdfs:label "Аланза Алвес"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Alastor_Grium a hpo:Wizard ;
+    rdfs:label "Аластор Грюм"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Alastor_Gumboil a hpo:Wizard ;
+    rdfs:label "Аластор Гумбойл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Albanskii_krestianin a hpo:Muggle ;
+    rdfs:label "Албанский крестьянин"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Alberik_Grannion a hpo:Wizard ;
+    rdfs:label "Альберик Граннион"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Albert_Bellchant a hpo:Wizard ;
+    rdfs:label "Альберт Беллчант"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Albert_But a hpo:Wizard ;
+    rdfs:label "Альберт Бут"@ru ;
+    rdfs:comment "Пол: Мужчина"@ru .
+
+hpo:Albus_Dambldor a hpo:Wizard ;
+    rdfs:label "Альбус Дамблдор"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Alekhandra_Alonso a hpo:Wizard ;
+    rdfs:label "Алехандра Алонсо"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Aleksandra_Uoker a hpo:Wizard ;
+    rdfs:label "Александра Уокер"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Aleksiia_Blek a hpo:Wizard ;
+    rdfs:label "Алексия Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Alekto_Kerrou a hpo:Wizard ;
+    rdfs:label "Алекто Кэрроу"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Alfard_Blek a hpo:Wizard ;
+    rdfs:label "Альфард Блэк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ali_Bashir a hpo:Wizard ;
+    rdfs:label "Али Башир"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Alma a hpo:Wizard ;
+    rdfs:label "Альма"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Alteda a hpo:Wizard ;
+    rdfs:label "Альтеда"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Amata a hpo:Wizard ;
+    rdfs:label "Амата"@ru ;
+    hpo:marriedWith hpo:Ser_Nevezuchii ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Ambrouz_Svott a hpo:Ghost ;
+    rdfs:label "Амброуз Свотт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ameliia_Bouns a hpo:Wizard ;
+    rdfs:label "Амелия Боунс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Amikus_Kerrou a hpo:Wizard ;
+    rdfs:label "Амикус Кэрроу"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Anania_Gopal a hpo:Wizard ;
+    rdfs:label "Ананья Гопал"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Anderson a hpo:Muggle ;
+    rdfs:label "Андерсон"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Angus a hpo:Wizard ;
+    rdfs:label "Ангус"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Angus_Biukenen a hpo:Wizard ;
+    rdfs:label "Ангус Бьюкенен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Anna_Bolein a hpo:Squib ;
+    rdfs:label "Анна Болейн"@ru ;
+    hpo:marriedWith hpo:Genrikh_VIII ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Annalena_Glim a hpo:Wizard ;
+    rdfs:label "Анналена Глим"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Apolloniia_Blek a hpo:Wizard ;
+    rdfs:label "Аполлония Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Araminta_Meliflua_Blek a hpo:Wizard ;
+    rdfs:label "Араминта Мелифлуа Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Archibald_Alderton a hpo:Wizard ;
+    rdfs:label "Арчибальд Алдертон"@ru ;
+    rdfs:comment "Пол: Мужчина"@ru .
+
+hpo:Ariana_Dambldor a hpo:Wizard ;
+    rdfs:label "Ариана Дамблдор"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Arif_Sikander a hpo:Wizard ;
+    rdfs:label "Ариф Сикандер"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Arkhitektor_Khogvartsa a hpo:Wizard ;
+    rdfs:label "Архитектор Хогвартса"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Arkturus_Blek_I a hpo:Wizard ;
+    rdfs:label "Арктурус Блэк I"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Arkturus_Blek_II a hpo:Wizard ;
+    rdfs:label "Арктурус Блэк II"@ru ;
+    hpo:marriedWith hpo:Lisandra_Iaksli ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Arkturus_Blek_III a hpo:Wizard ;
+    rdfs:label "Арктурус Блэк III"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Arkus a hpo:Wizard ;
+    rdfs:label "Аркус"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Armiia_Gellerta_Grin-de-Valda a hpo:Organization ;
+    rdfs:label "Армия Геллерта Грин-де-Вальда"@ru .
+
+hpo:Armiia_oborotnei a hpo:Organization ;
+    rdfs:label "Армия оборотней"@ru .
+
+hpo:Arnold_Guzman a hpo:Wizard ;
+    rdfs:label "Арнольд Гузман"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Arseniia_Gonsales a hpo:Wizard ;
+    rdfs:label "Арсения Гонсалес"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Artemiziia_Blekvud a hpo:Wizard ;
+    rdfs:label "Артемизия Блэквуд"@ru ;
+    hpo:marriedWith hpo:Iunon_Blekvud ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Artifact a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Asha a hpo:Wizard ;
+    rdfs:label "Аша"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Astor_Bellchant a hpo:Wizard ;
+    rdfs:label "Астор Беллчант"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Avrora_Sinistra a hpo:Wizard ;
+    rdfs:label "Аврора Синистра"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Azkaban a hpo:Location ;
+    rdfs:label "Азкабан"@ru .
+
+hpo:Badiia_Ali a hpo:Wizard ;
+    rdfs:label "Бадия Али"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Badzher_Piklish_III a hpo:Ghost ;
+    rdfs:label "Баджер Пиклиш III"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Balfur_Blein a hpo:Wizard ;
+    rdfs:label "Балфур Блейн"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Banda_Drako_Malfoia a hpo:Organization ;
+    rdfs:label "Банда Драко Малфоя"@ru .
+
+hpo:Banda_Rukvuda a hpo:Organization ;
+    rdfs:label "Банда Руквуда"@ru .
+
+hpo:Banti_Brodeker a hpo:Wizard ;
+    rdfs:label "Банти Бродекер"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Barberus_Bragge a hpo:Wizard ;
+    rdfs:label "Барберус Брагге"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bard_Bidl a hpo:Wizard ;
+    rdfs:label "Бард Бидль"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bardolf_Bomont a hpo:Wizard ;
+    rdfs:label "Бардольф Бомонт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Barker_ne-mag a hpo:Wizard ;
+    rdfs:label "Баркер (не-маг)"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Barmensha_v_Dyriavom_kotle a hpo:Wizard ;
+    rdfs:label "Барменша в «Дырявом котле»"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Barnabus_Blenkinsop a hpo:Wizard ;
+    rdfs:label "Барнабус Бленкинсоп"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Barri_Vinkl a hpo:Wizard ;
+    rdfs:label "Барри Винкль"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Barti_Krauch_mladshii a hpo:Wizard ;
+    rdfs:label "Барти Крауч (младший)"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bartolomiu a hpo:Wizard ;
+    rdfs:label "Бартоломью"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Baruffio a hpo:Wizard ;
+    rdfs:label "Баруффио"@ru ;
+    hpo:marriedWith hpo:Zhena_Baruffio__1_ ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Batilda_Begshot a hpo:Wizard ;
+    rdfs:label "Батильда Бэгшот"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Batsheda_Babbling a hpo:Wizard ;
+    rdfs:label "Батшеда Бабблинг"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Beatris_Bloksam a hpo:Wizard ;
+    rdfs:label "Беатрис Блоксам"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Bei_Khovin a hpo:Wizard ;
+    rdfs:label "Бэй Ховин"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Bein a hpo:Centaur ;
+    rdfs:label "Бэйн"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bekselinda_Bornsuollou a hpo:Wizard ;
+    rdfs:label "Бекселинда Борнсуоллоу"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Belvina_Blek a hpo:Wizard ;
+    rdfs:label "Бельвина Блэк"@ru ;
+    hpo:marriedWith hpo:Gerbert_Biork ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Bem a hpo:Wizard ;
+    rdfs:label "Бем"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bernadett a hpo:Wizard ;
+    rdfs:label "Бернадетт"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Berti_Bott a hpo:Wizard ;
+    rdfs:label "Берти Ботт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Betti_Bagbruk a hpo:Wizard ;
+    rdfs:label "Бетти Багбрук"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Betti_Breitueit a hpo:Wizard ;
+    rdfs:label "Бетти Брейтуэйт"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Bezil a hpo:Wizard ;
+    rdfs:label "Бэзил"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Big a owl:Class ;
+    rdfs:subClassOf hpo:Event .
+
+hpo:Bilius a hpo:Wizard ;
+    rdfs:label "Билиус"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Billi_Anderson a hpo:Wizard ;
+    rdfs:label "Билли Андерсон"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Bilton_Bilms a hpo:Wizard ;
+    rdfs:label "Билтон Билмс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bin a hpo:Wizard ;
+    rdfs:label "Бин"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Blai a hpo:Wizard ;
+    rdfs:label "Блай"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bob a hpo:Wizard ;
+    rdfs:label "Боб"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bolnitsa_Sviatogo_Mungo a hpo:Organization ;
+    rdfs:label "Больница Святого Мунго"@ru .
+
+hpo:Boris_Bestolkovyi a hpo:Wizard ;
+    rdfs:label "Борис Бестолковый"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bozo a hpo:Wizard ;
+    rdfs:label "Бозо"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Braian_Gegvaild a hpo:Wizard ;
+    rdfs:label "Брайан Гэгвайлд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Braian_Gegvaild_III a hpo:Wizard ;
+    rdfs:label "Брайан Гэгвайльд III"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bran_Krovozhadnyi a hpo:Giant ;
+    rdfs:label "Бран Кровожадный"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Brat_Dolores_Ambridzh a hpo:Wizard ;
+    rdfs:label "Брат Долорес Амбридж"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Brat_Isidory_Morganak a hpo:Wizard ;
+    rdfs:label "Брат Исидоры Морганак"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bratstvo_goblinov a hpo:Organization ;
+    rdfs:label "Братство гоблинов"@ru .
+
+hpo:Brazilskii_drug_Billa_Uizli a hpo:Wizard ;
+    rdfs:label "Бразильский друг Билла Уизли"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bredli a hpo:Wizard ;
+    rdfs:label "Брэдли"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Brevis_Birch a hpo:Wizard ;
+    rdfs:label "Брэвис Бирч"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bridzhit_Venlok a hpo:Wizard ;
+    rdfs:label "Бриджит Венлок"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Broderik_Boud a hpo:Wizard ;
+    rdfs:label "Бродерик Боуд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Bruno_Bruunkhart a hpo:Wizard ;
+    rdfs:label "Бруно Бруунхарт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Chariti_Berbidzh a hpo:Wizard ;
+    rdfs:label "Чарити Бербидж"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Charlz_Rukvud a hpo:Wizard ;
+    rdfs:label "Чарльз Руквуд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Chiio_Kogava a hpo:Wizard ;
+    rdfs:label "Чиё Когава"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Chiornyi_rytsar a hpo:Ghost ;
+    rdfs:label "Чёрный рыцарь"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Chistomiot_firma a hpo:Organization ;
+    rdfs:label "Чистомёт (фирма)"@ru .
+
+hpo:Dafna_Gringrass a hpo:Wizard ;
+    rdfs:label "Дафна Гринграсс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Damfri_Uestlend a hpo:Ghost ;
+    rdfs:label "Дамфри Уэстленд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Damokl_Belbi a hpo:Wizard ;
+    rdfs:label "Дамокл Белби"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Deivi_Gadzhen a hpo:Wizard ;
+    rdfs:label "Дэйви Гаджен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Demien_Bandrel a hpo:Wizard ;
+    rdfs:label "Дэмиен Бандрел"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Den_Darker a hpo:Wizard ;
+    rdfs:label "Ден Даркер"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Dennis_Bishop a hpo:Muggle ;
+    rdfs:label "Деннис Бишоп"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Deti_Edgara_Bounsa a hpo:Wizard ;
+    rdfs:label "Дети Эдгара Боунса"@ru .
+
+hpo:Devlin_Vaitkhorn a hpo:Wizard ;
+    rdfs:label "Девлин Вайтхорн"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Diadema_Gussokl a hpo:Wizard ;
+    rdfs:label "Диадема Гуссокл"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Dina_Gekat a hpo:Wizard ;
+    rdfs:label "Дина Гекат"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Dolores_Ambridzh a hpo:Wizard ;
+    rdfs:label "Долорес Амбридж"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Dorran a hpo:Centaur ;
+    rdfs:label "Дорран"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Drako_Malfoi a hpo:Wizard ;
+    rdfs:label "Драко Малфой"@ru ;
+    hpo:marriedWith hpo:Astoriia_Gringrass ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Dueli_Osnovatelei a hpo:Organization ;
+    rdfs:label "Дуэли Основателей"@ru .
+
+hpo:Dunkan_Esh a hpo:Ghost ;
+    rdfs:label "Дункан Эш"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Duo a hpo:Spell ;
+    rdfs:label "Дуо"@ru .
+
+hpo:Dvizhenie_za_prava_trollei a hpo:Organization ;
+    rdfs:label "Движение за права троллей"@ru .
+
+hpo:Dzherard_Grei a hpo:Wizard ;
+    rdfs:label "Джерард Грей"@ru ;
+    hpo:marriedWith hpo:Diana_Grei ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Dzheremaiia_Garnet a hpo:Wizard ;
+    rdfs:label "Джеремайя Гарнет"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Dzhifford_Abbot a hpo:Wizard ;
+    rdfs:label "Джиффорд Аббот"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Dzhimbo_Blishvik a hpo:Wizard ;
+    rdfs:label "Джимбо Блишвик"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Dzhon_Biukenen a hpo:Wizard ;
+    rdfs:label "Джон Бьюкенен"@ru ;
+    rdfs:comment "Пол: Мужчина"@ru .
+
+hpo:Dzhordzh_Gordon_Bairon a hpo:Muggle ;
+    rdfs:label "Джордж Гордон Байрон"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ebigeil_Grei a hpo:Wizard ;
+    rdfs:label "Эбигейл Грей"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Edgar_Bouns a hpo:Wizard ;
+    rdfs:label "Эдгар Боунс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Edgar_Kloggs a hpo:Ghost ;
+    rdfs:label "Эдгар Клоггс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Edmund_Geddlgeit a hpo:Wizard ;
+    rdfs:label "Эдмунд Геддлгейт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Edmund_Grabb a hpo:Ghost ;
+    rdfs:label "Эдмунд Грабб"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Edrik_Vosper a hpo:Wizard ;
+    rdfs:label "Эдрик Воспер"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Eduardus_Blek a hpo:Squib ;
+    rdfs:label "Эдуардус Блэк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Egeria a hpo:Organization ;
+    rdfs:label "Егеря"@ru .
+
+hpo:Eleazar_Fig a hpo:Wizard ;
+    rdfs:label "Элеазар Фиг"@ru ;
+    hpo:marriedWith hpo:Miriam_Fig ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Elek a hpo:Centaur ;
+    rdfs:label "Элек"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Elena_Kogtevran a hpo:Ghost ;
+    rdfs:label "Елена Когтевран"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Eleonora_Brenstoun a hpo:Wizard ;
+    rdfs:label "Элеонора Брэнстоун"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Elizabet_Biork a hpo:Wizard ;
+    rdfs:label "Элизабет Бёрк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Elladora_Blek a hpo:Wizard ;
+    rdfs:label "Элладора Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Elora_Dann a hpo:Wizard ;
+    rdfs:label "Элора Данн"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Elspet_Makgilloni a hpo:Wizard ;
+    rdfs:label "Элспет Макгиллони"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Emi_Benson a hpo:Muggle ;
+    rdfs:label "Эми Бенсон"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Emma_Vaniti a hpo:Wizard ;
+    rdfs:label "Эмма Ванити"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Emmelina_Vens a hpo:Wizard ;
+    rdfs:label "Эммелина Вэнс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Engist_iz_Verkhnego_Barntona a hpo:Giant ;
+    rdfs:label "Энгист из Верхнего Барнтона"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Entoni_Goldstein a hpo:Wizard ;
+    rdfs:label "Энтони Голдстейн"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Erling_Velikii a hpo:Ghost ;
+    rdfs:label "Эрлинг Великий"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Erni_Azan a hpo:Wizard ;
+    rdfs:label "Эрни Азан"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Evandzhelina_Bardsli a hpo:Wizard ;
+    rdfs:label "Эванджелина Бардсли"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Ezop_Sharp a hpo:Wizard ;
+    rdfs:label "Эзоп Шарп"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Faiverli_Anderkliff a hpo:Wizard ;
+    rdfs:label "Файверли Андерклифф"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Fatima_Al-Eriani a hpo:Wizard ;
+    rdfs:label "Фатима Аль-Эрьяни"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Fei_Danbar a hpo:Wizard ;
+    rdfs:label "Фэй Данбар"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Ferdinand_da_Gama a hpo:Wizard ;
+    rdfs:label "Фердинанд да Гама"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Fibi_Blek a hpo:Wizard ;
+    rdfs:label "Фиби Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Filbert_Deverill a hpo:Wizard ;
+    rdfs:label "Филберт Деверилл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Filius_Flitvik a hpo:Wizard ;
+    rdfs:label "Филиус Флитвик"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Fineas_Blek a hpo:Wizard ;
+    rdfs:label "Финеас Блэк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Fingel_Besstrashnyi a hpo:Wizard ;
+    rdfs:label "Фингел Бесстрашный"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Flavius_Belbi a hpo:Wizard ;
+    rdfs:label "Флавиус Белби"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Flora_Biukenen a hpo:Wizard ;
+    rdfs:label "Флора Бьюкенен"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Florents a hpo:Centaur ;
+    rdfs:label "Флоренц"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Fortinbras a hpo:Wizard ;
+    rdfs:label "Фортинбрас"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Frenk_Brais a hpo:Muggle ;
+    rdfs:label "Фрэнк Брайс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Front_osvobozhdeniia_goblinov a hpo:Organization ;
+    rdfs:label "Фронт освобождения гоблинов"@ru .
+
+hpo:Galateia_Vilkost a hpo:Wizard ;
+    rdfs:label "Галатея Вилкост"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Gankhilda_iz_Gorsmura a hpo:Wizard ;
+    rdfs:label "Ганхильда из Горсмура"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Garri_Potter a hpo:Wizard ;
+    rdfs:label "Гарри Поттер"@ru ;
+    hpo:marriedWith hpo:Dzhinni_Uizli ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gektor_Dagvort-Greindzher a hpo:Wizard ;
+    rdfs:label "Гектор Дагворт-Грейнджер"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gellert_Grin-de-Vald a hpo:Wizard ;
+    rdfs:label "Геллерт Грин-де-Вальд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gelmut a hpo:Wizard ;
+    rdfs:label "Гельмут"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gelmut_Vais a hpo:Wizard ;
+    rdfs:label "Гельмут Вайс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gelvin_Gadzhen a hpo:Wizard ;
+    rdfs:label "Гэлвин Гаджен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Genri a hpo:Wizard ;
+    rdfs:label "Генри"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Genri_Bamblpaf a hpo:Wizard ;
+    rdfs:label "Генри Бамблпаф"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Genrikh_VI a hpo:Muggle ;
+    rdfs:label "Генрих VI"@ru ;
+    hpo:marriedWith hpo:Margarita_Anzhuiskaia ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Georg_III a hpo:Muggle ;
+    rdfs:label "Георг III"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gerbert_Biri a hpo:Wizard ;
+    rdfs:label "Герберт Бири"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gerevard a hpo:Wizard ;
+    rdfs:label "Геревард"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:German_Vintringam a hpo:Wizard ;
+    rdfs:label "Герман Винтрингам"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Germann_Vil a hpo:Wizard ;
+    rdfs:label "Германн Виль"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gesfestus_Gor a hpo:Wizard ;
+    rdfs:label "Гесфестус Гор"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gibbon a hpo:Wizard ;
+    rdfs:label "Гиббон"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gilbert_Bingli a hpo:Wizard ;
+    rdfs:label "Гилберт Бингли"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gledis_Butbi a hpo:Wizard ;
+    rdfs:label "Глэдис Бутби"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Gledis_Gadzhen a hpo:Wizard ;
+    rdfs:label "Глэдис Гаджен"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Glen a hpo:Wizard ;
+    rdfs:label "Глен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Glinnis_Griffits a hpo:Wizard ;
+    rdfs:label "Глиннис Гриффитс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Glupyi_korol a hpo:Muggle ;
+    rdfs:label "Глупый король"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gnilozuby a hpo:Organization ;
+    rdfs:label "Гнилозубы"@ru .
+
+hpo:Godelot a hpo:Wizard ;
+    rdfs:label "Годелот"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Godfri a hpo:Ghost ;
+    rdfs:label "Годфри"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Godrik_Griffindor a hpo:Wizard ;
+    rdfs:label "Годрик Гриффиндор"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Goil-starshii a hpo:Wizard ;
+    rdfs:label "Гойл-старший"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Golgomaf a hpo:Giant ;
+    rdfs:label "Голгомаф"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Goliaf a hpo:Giant ;
+    rdfs:label "Голиаф"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Golpalott a hpo:Wizard ;
+    rdfs:label "Голпалотт"@ru .
+
+hpo:Gonoriia a hpo:Wizard ;
+    rdfs:label "Гонория"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Goratsii_Sliznort a hpo:Wizard ;
+    rdfs:label "Гораций Слизнорт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Goratsio_Klouk a hpo:Ghost ;
+    rdfs:label "Горацио Клоук"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gorbin a hpo:Wizard ;
+    rdfs:label "Горбин"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gordon a hpo:Muggle ;
+    rdfs:label "Гордон"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gornichnaia_v_Dyriavom_kotle a hpo:Wizard ;
+    rdfs:label "Горничная в «Дырявом котле»"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Graf a hpo:Wizard ;
+    rdfs:label "Граф"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Grannings a hpo:Organization ;
+    rdfs:label "Граннингс"@ru .
+
+hpo:Grazhdanskaia_Assotsiatsiia_Vosstanovleniia_Nezavisimosti_Elfov a hpo:Organization ;
+    rdfs:label "Гражданская Ассоциация Восстановления Независимости Эльфов"@ru .
+
+hpo:Gregori_Goil a hpo:Wizard ;
+    rdfs:label "Грегори Гойл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gregorovich a hpo:Wizard ;
+    rdfs:label "Грегорович"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Griffindor a hpo:House ;
+    rdfs:label "Гриффиндор"@ru .
+
+hpo:Grigorii_Lstivyi a hpo:Wizard ;
+    rdfs:label "Григорий Льстивый"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Grokhkh a hpo:Giant ;
+    rdfs:label "Грохх"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gunnar_Grimmson a hpo:Wizard ;
+    rdfs:label "Гуннар Гриммсон"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Gvendolin_Babkok a hpo:Wizard ;
+    rdfs:label "Гвендолин Бабкок"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:House_elf a owl:Class ;
+    rdfs:subClassOf hpo:Magical_creature .
+
+hpo:Iakub_Gorski a hpo:Wizard ;
+    rdfs:label "Якуб Горски"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Igor_Brand a hpo:Wizard ;
+    rdfs:label "Игорь Бранд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Inspektsionnaia_druzhina a hpo:Organization ;
+    rdfs:label "Инспекционная дружина"@ru .
+
+hpo:Iosi_Vakakhisa a hpo:Wizard ;
+    rdfs:label "Ёси Вакахиса"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Iozef_Vronskii a hpo:Wizard ;
+    rdfs:label "Йозеф Вронский"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Irodiana_Birn a hpo:Wizard ;
+    rdfs:label "Иродиана Бирн"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Isidora_Morganak a hpo:Wizard ;
+    rdfs:label "Исидора Морганак"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Iuan_Aberkrombi a hpo:Wizard ;
+    rdfs:label "Юан Аберкромби"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Iuniversal_Brumz_Limited a hpo:Organization ;
+    rdfs:label "Юниверсал Брумз Лимитед"@ru .
+
+hpo:Iustas_Biork a hpo:Wizard ;
+    rdfs:label "Юстас Бёрк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ivan_Volkov a hpo:Wizard ;
+    rdfs:label "Иван Волков"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Kallidora_Blek a hpo:Wizard ;
+    rdfs:label "Каллидора Блэк"@ru ;
+    rdfs:comment "Пол: женский"@ru .
+
+hpo:Kampaniia_za_bolshuiu_svobodu_dlia_volshebnikov a hpo:Organization ;
+    rdfs:label "Кампания за большую свободу для волшебников"@ru .
+
+hpo:Kandida_Kogtevran a hpo:Wizard ;
+    rdfs:label "Кандида Когтевран"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Karaktak_Biork a hpo:Wizard ;
+    rdfs:label "Карактак Бёрк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Karl_Brodmur a hpo:Wizard ;
+    rdfs:label "Карл Бродмур"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Karmen_Garsiia a hpo:Wizard ;
+    rdfs:label "Кармен Гарсия"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kassandra_Vablatski a hpo:Wizard ;
+    rdfs:label "Кассандра Ваблатски"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kassiopeia_Blek a hpo:Wizard ;
+    rdfs:label "Кассиопея Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kassius_Bell a hpo:Wizard ;
+    rdfs:label "Кассиус Белл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Katarina_fon_Glokenshpiler a hpo:Wizard ;
+    rdfs:label "Катарина фон Глокеншпилер"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Katbert_Bins a hpo:Ghost ;
+    rdfs:label "Катберт Бинс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Keit_Brindlmor a hpo:Wizard ;
+    rdfs:label "Кейт Бриндлмор"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kelli_Vakkaarangapavarau a hpo:Wizard ;
+    rdfs:label "Келли Ваккаарангапаварау"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kennet_Gastings a hpo:Wizard ;
+    rdfs:label "Кеннет Гастингс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Kentavry a hpo:Wizard ;
+    rdfs:label "Кентавры"@ru .
+
+hpo:Keos_Grimshou a hpo:Wizard ;
+    rdfs:label "Кеос Гримшоу"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Keti_Bell a hpo:Wizard ;
+    rdfs:label "Кэти Белл"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kevin_Brodmur a hpo:Wizard ;
+    rdfs:label "Кевин Бродмур"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Khamfri_Balzamo a hpo:Wizard ;
+    rdfs:label "Хамфри Бальзамо"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Khemish_Biukenen a hpo:Wizard ;
+    rdfs:label "Хэмиш Бьюкенен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Khesper_Blek a hpo:Wizard ;
+    rdfs:label "Хеспер Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Khitkot_Barbari a hpo:Wizard ;
+    rdfs:label "Хиткот Барбари"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Khiugo_Greindzher-Uizli a hpo:Wizard ;
+    rdfs:label "Хьюго Грейнджер-Уизли"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Khogsmid a hpo:Location ;
+    rdfs:label "Хогсмид"@ru .
+
+hpo:Khogvarts a hpo:Location ;
+    rdfs:label "Хогвартс"@ru .
+
+hpo:Kholli_Blekbiord a hpo:Wizard ;
+    rdfs:label "Холли Блэкбёрд"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Khraniteli a hpo:Organization ;
+    rdfs:label "Хранители"@ru .
+
+hpo:Kingsli_Brustver a hpo:Wizard ;
+    rdfs:label "Кингсли Бруствер"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Kiuvanda_Beili a hpo:Wizard ;
+    rdfs:label "Кьюванда Бейли"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kloda_Dromgul a hpo:Wizard ;
+    rdfs:label "Клода Дромгул"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Klub_Sliznei a hpo:Organization ;
+    rdfs:label "Клуб Слизней"@ru .
+
+hpo:Klub_obezglavlennykh_okhotnikov a hpo:Organization,
+        hpo:Wizard ;
+    rdfs:label "Клуб обезглавленных охотников"@ru .
+
+hpo:Kogtevran a hpo:House ;
+    rdfs:label "Когтевран"@ru .
+
+hpo:Koloniia_velikanov a hpo:Organization,
+        hpo:Wizard ;
+    rdfs:label "Колония великанов"@ru .
+
+hpo:Komissiia_po_Eksperimentalnym_Charam a hpo:Organization ;
+    rdfs:label "Комиссия по Экспериментальным Чарам"@ru .
+
+hpo:Komissiia_po_uchiotu_maglovskikh_vyrodkov a hpo:Organization ;
+    rdfs:label "Комиссия по учёту магловских выродков"@ru .
+
+hpo:Komitet_po_kviddichu_Mezhdunarodnoi_konfederatsii_magov a hpo:Organization ;
+    rdfs:label "Комитет по квиддичу Международной конфедерации магов"@ru .
+
+hpo:Konfety_madam_Borbolety a hpo:Organization ;
+    rdfs:label "Конфеты мадам Борболеты"@ru .
+
+hpo:Konkordiia_Rouli a hpo:Wizard ;
+    rdfs:label "Конкордия Роули"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Konrad_Vaiss a hpo:Wizard ;
+    rdfs:label "Конрад Вайсс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Konstantsiia_Dagvort a hpo:Wizard ;
+    rdfs:label "Констанция Дагворт"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kordeliia_Veksmur a hpo:Wizard ;
+    rdfs:label "Корделия Вексмур"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kornelius_Agrippa a hpo:Wizard ;
+    rdfs:label "Корнелиус Агриппа"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Korol_Artur a hpo:Muggle ;
+    rdfs:label "Король Артур"@ru ;
+    hpo:marriedWith hpo:Malodora_Grimm ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Koroleva_Viktoriia a hpo:Muggle ;
+    rdfs:label "Королева Виктория"@ru ;
+    hpo:marriedWith hpo:Albert_Saksen-Koburg-Gotskii ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Korotyshka_Bordman a hpo:Wizard ;
+    rdfs:label "Коротышка Бордман"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Kosme_Akazhior a hpo:Wizard ;
+    rdfs:label "Косме Акажёр"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Kosoi_pereulok a hpo:Location ;
+    rdfs:label "Косой переулок"@ru .
+
+hpo:Kreig_Bouker_mladshii a hpo:Wizard ;
+    rdfs:label "Крейг Боукер (младший)"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Kressida_Blium a hpo:Wizard ;
+    rdfs:label "Крессида Блюм"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kridens_Berboun a hpo:Wizard ;
+    rdfs:label "Криденс Бэрбоун"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Krispin_Dann a hpo:Wizard ;
+    rdfs:label "Криспин Данн"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Krovavyi_Baron a hpo:Ghost ;
+    rdfs:label "Кровавый Барон"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Krug_Khanny a hpo:Organization ;
+    rdfs:label "Круг Ханны"@ru .
+
+hpo:Kuinni_Goldshtein a hpo:Wizard ;
+    rdfs:label "Куинни Голдштейн"@ru ;
+    hpo:marriedWith hpo:Iakob_Kovalski ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kursten_Bliik a hpo:Wizard ;
+    rdfs:label "Курстен Блийк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Kventin_Trimbl a hpo:Wizard ;
+    rdfs:label "Квентин Тримбл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Kvirinus_Kvirrell a hpo:Wizard ;
+    rdfs:label "Квиринус Квиррелл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Laimber a hpo:Wizard ;
+    rdfs:label "Лаймбер"@ru ;
+    rdfs:comment "Пол: мужской"@ru .
+
+hpo:Lavanda_Braun a hpo:Wizard ;
+    rdfs:label "Лаванда Браун"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Lea_Bellflior a hpo:Wizard ;
+    rdfs:label "Леа Белльфлёр"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Libatsius_Borago a hpo:Wizard ;
+    rdfs:label "Либациус Бораго"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Liga_volshebnits a hpo:Organization ;
+    rdfs:label "Лига волшебниц"@ru .
+
+hpo:Liga_zashchity_ot_temnykh_sil a hpo:Organization ;
+    rdfs:label "Лига защиты от темных сил"@ru .
+
+hpo:Likoris_Blek a hpo:Wizard ;
+    rdfs:label "Ликорис Блэк"@ru ;
+    rdfs:comment "Пол: женский"@ru .
+
+hpo:Likorus_Blek a hpo:Wizard ;
+    rdfs:label "Ликорус Блэк"@ru ;
+    hpo:marriedWith hpo:Magenta_Trip ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Lisandra_Blekvud a hpo:Squib ;
+    rdfs:label "Лисандра Блэквуд"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Liudovik_Begmen a hpo:Wizard ;
+    rdfs:label "Людовик Бэгмен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Liutsian_Boul a hpo:Wizard ;
+    rdfs:label "Люциан Боул"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Lord_Draben a hpo:Ghost ;
+    rdfs:label "Лорд Драбен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Lord_Volan-de-Mort a hpo:Wizard ;
+    rdfs:label "Лорд Волан-де-Морт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Lorre_Gustafson a hpo:Wizard ;
+    rdfs:label "Лорре Густафсон"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Luchshee_morozhenoe_Gudvina a hpo:Organization ;
+    rdfs:label "Лучшее мороженое Гудвина"@ru .
+
+hpo:Lui_Gazh a hpo:Wizard ;
+    rdfs:label "Луи Гаж"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Madam_Bonabill a hpo:Wizard ;
+    rdfs:label "Мадам Бонабилль"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Madiva_Onai a hpo:Wizard ;
+    rdfs:label "Мадива Онай"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Magicheskaia_materiia_Millamanta a hpo:Organization ;
+    rdfs:label "Магическая материя Милламанта"@ru .
+
+hpo:Magnus a hpo:Centaur ;
+    rdfs:label "Магнус"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Magorian a hpo:Centaur ;
+    rdfs:label "Магориан"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Maikl_Babatola a hpo:Muggle ;
+    rdfs:label "Майкл Бабатола"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Mailz_Bletchli a hpo:Wizard ;
+    rdfs:label "Майлз Блетчли"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Maksim_Brankovich_III a hpo:Wizard ;
+    rdfs:label "Максим Бранкович III"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Maksima a hpo:Spell ;
+    rdfs:label "Максима"@ru .
+
+hpo:Maldun_Kregg a hpo:Wizard ;
+    rdfs:label "Малдун Крэгг"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Malkolm_Beddok a hpo:Wizard ;
+    rdfs:label "Малькольм Бэддок"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Marius_Blek a hpo:Squib ;
+    rdfs:label "Мариус Блэк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Markus_Belbi a hpo:Wizard ;
+    rdfs:label "Маркус Белби"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Marodiory a hpo:Organization ;
+    rdfs:label "Мародёры"@ru .
+
+hpo:Mat_Amelii_Bouns a hpo:Wizard ;
+    rdfs:label "Мать Амелии Боунс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Matilda_Grimblkhok a hpo:Wizard ;
+    rdfs:label "Матильда Гримблхок"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Matilda_Uizli a hpo:Wizard ;
+    rdfs:label "Матильда Уизли"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Matis_Gazh a hpo:Wizard ;
+    rdfs:label "Матис Гаж"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Melinda_Bobbin a hpo:Wizard ;
+    rdfs:label "Мелинда Боббин"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Mendi_Broklkherst a hpo:Wizard ;
+    rdfs:label "Мэнди Броклхерст"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Meri_Biukenen a hpo:Wizard ;
+    rdfs:label "Мэри Бьюкенен"@ru ;
+    rdfs:comment "Пол: Женщина"@ru .
+
+hpo:Meri_Lu_Berboun a hpo:Wizard ;
+    rdfs:label "Мэри Лу Бэрбоун"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Mermaid a owl:Class ;
+    rdfs:subClassOf hpo:Magical_creature .
+
+hpo:Merton_Greivz a hpo:Wizard ;
+    rdfs:label "Мертон Грэйвз"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Mezhdunarodnaia_assotsiatsiia_kviddicha a hpo:Organization ;
+    rdfs:label "Международная ассоциация квиддича"@ru .
+
+hpo:Mezhdunarodnaia_konfederatsiia_magov a hpo:Organization ;
+    rdfs:label "Международная конфедерация магов"@ru .
+
+hpo:Mezhdunarodnaia_volshebnaia_politsiia a hpo:Organization ;
+    rdfs:label "Международная волшебная полиция"@ru .
+
+hpo:Mildred_Benks a hpo:Wizard ;
+    rdfs:label "Милдред Бэнкс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Milisenta_Bulstroud a hpo:Wizard ;
+    rdfs:label "Милисента Булстроуд"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Milli_Gudabi a hpo:Wizard ;
+    rdfs:label "Милли Гудаби"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Millisenta_Bagnold a hpo:Wizard ;
+    rdfs:label "Миллисента Багнолд"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Minerva_Makgonagall a hpo:Wizard ;
+    rdfs:label "Минерва Макгонагалл"@ru ;
+    hpo:marriedWith hpo:Elfinstoun_Urkhart ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Ministerstvo_magii a hpo:Organization ;
+    rdfs:label "Министерство магии"@ru .
+
+hpo:Ministerstvo_magii_Frantsii a hpo:Organization ;
+    rdfs:label "Министерство магии Франции"@ru .
+
+hpo:Miotly_MakToni a hpo:Organization ;
+    rdfs:label "Мётлы МакТони"@ru .
+
+hpo:Mirabel_Chesnouk a hpo:Wizard ;
+    rdfs:label "Мирабель Чесноук"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Miranda_Gussokl a hpo:Wizard ;
+    rdfs:label "Миранда Гуссокл"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Miron_Vogteil a hpo:Wizard ;
+    rdfs:label "Мирон Вогтэйл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Misapinoia_Blek a hpo:Wizard ;
+    rdfs:label "Мисапиноя Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Missis_Greindzher a hpo:Muggle ;
+    rdfs:label "Миссис Грейнджер"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Missis_Gussokl a hpo:Wizard ;
+    rdfs:label "Миссис Гуссокл"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Mister_Belbi a hpo:Wizard ;
+    rdfs:label "Мистер Белби"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Mister_Greindzher a hpo:Muggle ;
+    rdfs:label "Мистер Грейнджер"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Mister_Gussokl a hpo:Wizard ;
+    rdfs:label "Мистер Гуссокл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Modesti_Berboun a hpo:Wizard ;
+    rdfs:label "Модести Бэрбоун"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Morgolt a hpo:Giant ;
+    rdfs:label "Моргольт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Mrachnye_monakhini a hpo:Wizard ;
+    rdfs:label "Мрачные монахини"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Mungo_Bonam a hpo:Wizard ;
+    rdfs:label "Мунго Бонам"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Musidora_Barkviz a hpo:Wizard ;
+    rdfs:label "Мусидора Барквиз"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Nerida_Volchanova a hpo:Wizard ;
+    rdfs:label "Нерида Волчанова"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Nestor_Emset a hpo:Ghost ;
+    rdfs:label "Нестор Эмсет"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Norin_Bleini a hpo:Wizard ;
+    rdfs:label "Норин Блэйни"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Obshchestvo_bedstvuiushchikh_volshebnits a hpo:Organization ;
+    rdfs:label "Общество бедствующих волшебниц"@ru .
+
+hpo:Obshchestvo_magicheskikh_storonnikov_shotlandskogo_regbi a hpo:Organization ;
+    rdfs:label "Общество магических сторонников шотландского регби"@ru .
+
+hpo:Obshchestvo_podderzhki_skvibov a hpo:Organization ;
+    rdfs:label "Общество поддержки сквибов"@ru .
+
+hpo:Obshchestvo_reformatsii_vedm a hpo:Organization ;
+    rdfs:label "Общество реформации ведьм"@ru .
+
+hpo:Obshchestvo_terpimosti_k_vampiram a hpo:Organization ;
+    rdfs:label "Общество терпимости к вампирам"@ru .
+
+hpo:Okhotniki_za_Golovami a hpo:Organization ;
+    rdfs:label "Охотники за Головами"@ru .
+
+hpo:Olaf_Andersen a hpo:Wizard ;
+    rdfs:label "Олаф Андерсен"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Oliver_Vud a hpo:Wizard ;
+    rdfs:label "Оливер Вуд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Oliviia_Grin a hpo:Wizard ;
+    rdfs:label "Оливия Грин"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Omar_Abasi a hpo:Wizard ;
+    rdfs:label "Омар Абаси"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Orden_Feniksa a hpo:Organization ;
+    rdfs:label "Орден Феникса"@ru .
+
+hpo:Orford_Ambridzh a hpo:Wizard ;
+    rdfs:label "Орфорд Амбридж"@ru ;
+    hpo:marriedWith hpo:Ellen_Kraknell ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Orion_Amari a hpo:Wizard ;
+    rdfs:label "Орион Амари"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Orion_Blek a hpo:Wizard ;
+    rdfs:label "Орион Блэк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Osvald_Bimish a hpo:Wizard ;
+    rdfs:label "Освальд Бимиш"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Otdel_obrazovaniia a hpo:Organization ;
+    rdfs:label "Отдел образования"@ru .
+
+hpo:Otets_Amelii_Bouns a hpo:Wizard ;
+    rdfs:label "Отец Амелии Боунс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Otriad_Dambldora a hpo:Organization ;
+    rdfs:label "Отряд Дамблдора"@ru .
+
+hpo:Ottalin_Gembl a hpo:Wizard ;
+    rdfs:label "Отталин Гэмбл"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Partnersha_Igoria_Karkarova_na_Sviatochnom_Balu a hpo:Wizard ;
+    rdfs:label "Партнерша Игоря Каркарова на Святочном Балу"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Patrik_Deleini-Podmor a hpo:Ghost ;
+    rdfs:label "Патрик Делэйни-Подмор"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Patritsiia_Reikpik a hpo:Wizard ;
+    rdfs:label "Патриция Рейкпик"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Peplamby a hpo:Organization ;
+    rdfs:label "Пепламбы"@ru .
+
+hpo:Persival_Dambldor a hpo:Wizard ;
+    rdfs:label "Персиваль Дамблдор"@ru ;
+    hpo:marriedWith hpo:Kendra_Dambldor ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Persival_Greivs a hpo:Wizard ;
+    rdfs:label "Персиваль Грейвс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Persival_Rekkhem a hpo:Wizard ;
+    rdfs:label "Персиваль Рэкхем"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Piotr_Volchanov a hpo:Wizard ;
+    rdfs:label "Пётр Волчанов"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Plachushchaia_vdova a hpo:Ghost ;
+    rdfs:label "Плачущая вдова"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Plaksa_Mirtl a hpo:Ghost ;
+    rdfs:label "Плакса Миртл"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Podrik_Betvorfi a hpo:Wizard ;
+    rdfs:label "Подрик Бэтворфи"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Podrik_Betvorfi_XXIII a hpo:Wizard ;
+    rdfs:label "Подрик Бэтворфи XXIII"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Podrik_Pils a hpo:Wizard ;
+    rdfs:label "Подрик Пилс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Polluks_Blek a hpo:Wizard ;
+    rdfs:label "Поллукс Блэк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Pomona_Stebl a hpo:Wizard ;
+    rdfs:label "Помона Стебль"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Popechitelskii_sovet a hpo:Organization ;
+    rdfs:label "Попечительский совет"@ru .
+
+hpo:Potion a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Pozhirateli_smerti a hpo:Organization ;
+    rdfs:label "Пожиратели смерти"@ru .
+
+hpo:Prendergast a hpo:Wizard ;
+    rdfs:label "Прендергаст"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Prividenie a hpo:Wizard ;
+    rdfs:label "Привидение"@ru .
+
+hpo:Prizrak_v_bashne_Griffindora a hpo:Ghost ;
+    rdfs:label "Призрак в башне Гриффиндора"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Prizrak_zhaby a hpo:Ghost ;
+    rdfs:label "Призрак жабы"@ru .
+
+hpo:Puffendui a hpo:House ;
+    rdfs:label "Пуффендуй"@ru .
+
+hpo:R a hpo:Organization ;
+    rdfs:label "Р"@ru .
+
+hpo:Ragnuk_Pervyi a hpo:Wizard ;
+    rdfs:label "Рагнук Первый"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ralf_Geidelberger a hpo:Wizard ;
+    rdfs:label "Ральф Гейдельбергер"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Raul_Almeida a hpo:Wizard ;
+    rdfs:label "Рауль Алмейда"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Regulus_Blek a hpo:Wizard ;
+    rdfs:label "Регулус Блэк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Regulus_Blek_I a hpo:Wizard ;
+    rdfs:label "Регулус Блэк I"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Reinard_Gazh a hpo:Wizard ;
+    rdfs:label "Рейнард Гаж"@ru ;
+    hpo:marriedWith hpo:Zhozett_Lestreindzh ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Rendolf_Barrou a hpo:Wizard ;
+    rdfs:label "Рэндольф Барроу"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Richard_Galkrad a hpo:Ghost ;
+    rdfs:label "Ричард Галкрад"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Rimus_Liupin a hpo:Wizard ;
+    rdfs:label "Римус Люпин"@ru ;
+    hpo:marriedWith hpo:Nimfadora_Tonks ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Robert_Grimsdich a hpo:Wizard ;
+    rdfs:label "Роберт Гримсдич"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Robert_Grin a hpo:Wizard ;
+    rdfs:label "Роберт Грин"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Robert_Vud a hpo:Wizard ;
+    rdfs:label "Роберт Вуд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Rolanda_Triuk a hpo:Wizard ;
+    rdfs:label "Роланда Трюк"@ru ;
+    rdfs:comment "Пол: Женщина"@ru .
+
+hpo:Role a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Romilda_Gussokl a hpo:Wizard ;
+    rdfs:label "Ромильда Гуссокл"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Romilda_Vein a hpo:Wizard ;
+    rdfs:label "Ромильда Вейн"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Ronan a hpo:Centaur ;
+    rdfs:label "Ронан"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Roza_Greindzher-Uizli a hpo:Wizard ;
+    rdfs:label "Роза Грейнджер-Уизли"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Rubeus_Khagrid a hpo:Giant ;
+    rdfs:label "Рубеус Хагрид"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Rudolf_Brand a hpo:Wizard ;
+    rdfs:label "Рудольф Бранд"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Rufus_Vinikus a hpo:Wizard ;
+    rdfs:label "Руфус Виникус"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Rytsar_s_torchashchei_vo_lbu_streloi a hpo:Ghost ;
+    rdfs:label "Рыцарь с торчащей во лбу стрелой"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:SKAUBLD a hpo:Organization ;
+    rdfs:label "С.К.А.У.Б.Л.Д."@ru .
+
+hpo:Saimon_Talmadzh a hpo:Ghost ;
+    rdfs:label "Саймон Талмадж"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:San_Bakar a hpo:Wizard ;
+    rdfs:label "Сан Бакар"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Satiavati_Shakh a hpo:Wizard ;
+    rdfs:label "Сатьявати Шах"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Sedrella_Blek a hpo:Wizard ;
+    rdfs:label "Седрелла Блэк"@ru ;
+    hpo:marriedWith hpo:Septimus_Uizli ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Seidzh_Bragnam a hpo:Wizard ;
+    rdfs:label "Сэйдж Брагнам"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Septima_Vektor a hpo:Wizard ;
+    rdfs:label "Септима Вектор"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Ser_Bediver a hpo:Muggle ;
+    rdfs:label "Сэр Бедивер"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ser_Nikolas_de_Mimsi-Delfington a hpo:Ghost ;
+    rdfs:label "Сэр Николас де Мимси-Дельфингтон"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Serafina_Bouns a hpo:Wizard ;
+    rdfs:label "Серафина Боунс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Serebrianye_kopia a hpo:Organization ;
+    rdfs:label "Серебряные копья"@ru .
+
+hpo:Severus_Snegg a hpo:Wizard ;
+    rdfs:label "Северус Снегг"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Shestiletnii_bolelshchik a hpo:Wizard ;
+    rdfs:label "Шестилетний болельщик"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Shikoba_Volf a hpo:Wizard ;
+    rdfs:label "Шикоба Вольф"@ru .
+
+hpo:Shvedskii_zapovednik_drakonov a hpo:Organization ;
+    rdfs:label "Шведский заповедник драконов"@ru .
+
+hpo:Sidzuka_Vatanabe a hpo:Wizard ;
+    rdfs:label "Сидзука Ватанабэ"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Signus_Blek_I a hpo:Wizard ;
+    rdfs:label "Сигнус Блэк I"@ru ;
+    hpo:marriedWith hpo:Ella_Maks ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Signus_Blek_II a hpo:Wizard ;
+    rdfs:label "Сигнус Блэк II"@ru ;
+    hpo:marriedWith hpo:Violetta_Bulstroud ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Silvanus_Kettlbern a hpo:Wizard ;
+    rdfs:label "Сильванус Кеттлберн"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Silvio_Astolfi a hpo:Wizard ;
+    rdfs:label "Сильвио Астольфи"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Siprien_Alesi a hpo:Wizard ;
+    rdfs:label "Сиприен Алеси"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Sirius_Blek a hpo:Wizard ;
+    rdfs:label "Сириус Блэк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Sirius_Blek_I a hpo:Wizard ;
+    rdfs:label "Сириус Блэк I"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Siuzen_Bouns a hpo:Wizard ;
+    rdfs:label "Сьюзен Боунс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Sivilla_Treloni a hpo:Wizard ;
+    rdfs:label "Сивилла Трелони"@ru ;
+    hpo:marriedWith hpo:Khaigglbottom_razvedeny ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Skorostnye_miotly_Nimbus a hpo:Organization ;
+    rdfs:label "Скоростные мётлы Нимбус"@ru .
+
+hpo:Slizerin a hpo:House ;
+    rdfs:label "Слизерин"@ru .
+
+hpo:Small a owl:Class ;
+    rdfs:subClassOf hpo:Event .
+
+hpo:Sovet_magicheskogo_zakonodatelstva a hpo:Organization ;
+    rdfs:label "Совет магического законодательства"@ru .
+
+hpo:Sovet_prizrakov a hpo:Organization ;
+    rdfs:label "Совет призраков"@ru .
+
+hpo:Sovet_volshebnikov a hpo:Organization ;
+    rdfs:label "Совет волшебников"@ru .
+
+hpo:Sovinye_voenno-vozdushnye_sily a hpo:Organization ;
+    rdfs:label "Совиные военно-воздушные силы"@ru .
+
+hpo:Srednevekovaia_assambleia_evropeiskikh_volshebnikov a hpo:Organization ;
+    rdfs:label "Средневековая ассамблея европейских волшебников"@ru .
+
+hpo:Stiuart_Akerli a hpo:Wizard ;
+    rdfs:label "Стюарт Акерли"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Stoddart_Vizers a hpo:Wizard ;
+    rdfs:label "Стоддарт Визерс"@ru ;
+    rdfs:comment "Пол: Мужчина"@ru .
+
+hpo:Sugubo_Ekstraordinarnoe_Obshchestvo_Zelevaritelei a hpo:Organization ;
+    rdfs:label "Сугубо Экстраординарное Общество Зельеварителей"@ru .
+
+hpo:Svupstiks a hpo:Wizard ;
+    rdfs:label "Свупстикс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Syn_Agnes a hpo:Wizard ;
+    rdfs:label "Сын Агнес"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Tainvistl_Gussokl a hpo:Wizard ;
+    rdfs:label "Тайнвистл Гуссокл"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Teofil_Abbot a hpo:Wizard ;
+    rdfs:label "Теофил Аббот"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Terri_But a hpo:Wizard ;
+    rdfs:label "Терри Бут"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Timoti_Blenkinsop a hpo:Wizard ;
+    rdfs:label "Тимоти Бленкинсоп"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Tobias_Stamp a hpo:Wizard ;
+    rdfs:label "Тобиас Стамп"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Tolstyi_Monakh a hpo:Ghost ;
+    rdfs:label "Толстый Монах"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Tomas_Braun a hpo:Wizard ;
+    rdfs:label "Томас Браун"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Torvus a hpo:Centaur ;
+    rdfs:label "Торвус"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Tria a hpo:Spell ;
+    rdfs:label "Триа"@ru .
+
+hpo:Tsiklop a hpo:Giant ;
+    rdfs:label "Циклоп"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Tsirk_Arkanus a hpo:Organization ;
+    rdfs:label "Цирк Арканус"@ru .
+
+hpo:Uchi_Akimbo a hpo:Wizard ;
+    rdfs:label "Учи Акимбо"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Uilki_Dvukrest a hpo:Wizard ;
+    rdfs:label "Уилки Двукрест"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Uilla_Uikholt a hpo:Ghost ;
+    rdfs:label "Уилла Уихолт"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Ulik_Gamp a hpo:Wizard ;
+    rdfs:label "Улик Гамп"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Uno a hpo:Spell ;
+    rdfs:label "Уно"@ru .
+
+hpo:Uolter_Aragon a hpo:Wizard ;
+    rdfs:label "Уолтер Арагон"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Urik_Oupli a hpo:Wizard ;
+    rdfs:label "Урик Оупли"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ursula_Blek a hpo:Wizard ;
+    rdfs:label "Урсула Блэк"@ru ;
+    hpo:marriedWith hpo:Fineas_Naidzhelus_Blek ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Vailda_Griffits a hpo:Wizard ;
+    rdfs:label "Вайлда Гриффитс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Vakanda a hpo:Wizard ;
+    rdfs:label "Ваканда"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Valburga_Blek a hpo:Wizard ;
+    rdfs:label "Вальбурга Блэк"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Valentina_Vaskes a hpo:Wizard ;
+    rdfs:label "Валентина Васкес"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Valeriia_Miriadd a hpo:Wizard ;
+    rdfs:label "Валерия Мириадд"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Varnava_Deverill a hpo:Wizard ;
+    rdfs:label "Варнава Деверилл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Varnava_Vzdriuchennyi a hpo:Wizard ;
+    rdfs:label "Варнава Вздрюченный"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vedma_iz_Irlandii a hpo:Wizard ;
+    rdfs:label "Ведьма из Ирландии"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Veizi a hpo:Wizard ;
+    rdfs:label "Вейзи"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Velikany a hpo:Wizard ;
+    rdfs:label "Великаны"@ru .
+
+hpo:Verbalnaia_formula a hpo:Spell ;
+    rdfs:label "Вербальная формула"@ru .
+
+hpo:Veriti a hpo:Wizard ;
+    rdfs:label "Верити"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Verkhovnyi_charodei_Vizengamota_v_1544_godu a hpo:Wizard ;
+    rdfs:label "Верховный чародей Визенгамота в 1544 году"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Verukka_Baktorn-Snaid a hpo:Wizard ;
+    rdfs:label "Верукка Бакторн-Снайд"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Vik_Graundsvell a hpo:Wizard ;
+    rdfs:label "Вик Граундсвелл"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vikki_Bishopper a hpo:Wizard ;
+    rdfs:label "Викки Бишоппер"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Viktor_Gridli a hpo:Wizard ;
+    rdfs:label "Виктор Гридли"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vilgelm_III_Oranskii a hpo:Muggle ;
+    rdfs:label "Вильгельм III Оранский"@ru ;
+    hpo:marriedWith hpo:Mariia_II ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vilgelm_Vigvort a hpo:Wizard ;
+    rdfs:label "Вильгельм Вигворт"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vilgelmina_Grabbli-Diorg a hpo:Wizard ;
+    rdfs:label "Вильгельмина Граббли-Дёрг"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Villanel a hpo:Wizard ;
+    rdfs:label "Вилланель"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Villi_Ventsel a hpo:Wizard ;
+    rdfs:label "Вилли Венцель"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vindiktus_Viridian a hpo:Wizard ;
+    rdfs:label "Виндиктус Виридиан"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Violetta_Bove a hpo:Wizard ;
+    rdfs:label "Виолетта Бове"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Vizengamot a hpo:Organization ;
+    rdfs:label "Визенгамот"@ru .
+
+hpo:Vladelets_lodki a hpo:Muggle ;
+    rdfs:label "Владелец лодки"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vladislav_Volfke a hpo:Wizard ;
+    rdfs:label "Владислав Вольфке"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vnuchka_starukhi-krestianki a hpo:Muggle ;
+    rdfs:label "Внучка старухи-крестьянки"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Volshebnik_v_fioletovoi_mantii a hpo:Wizard ;
+    rdfs:label "Волшебник в фиолетовой мантии"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Volshebnyi_edinyi_institut_druzei_fei a hpo:Organization ;
+    rdfs:label "Волшебный единый институт друзей фей"@ru .
+
+hpo:Vsemirnyi_drakonovedcheskii_zapovednik a hpo:Organization ;
+    rdfs:label "Всемирный драконоведческий заповедник"@ru .
+
+hpo:Vul a hpo:Wizard ;
+    rdfs:label "Вул"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Vulpus a hpo:Wizard ;
+    rdfs:label "Вульпус"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Zaklinanie a hpo:Spell ;
+    rdfs:label "Заклинание"@ru .
+
+hpo:Zapovednik_Valliiskikh_zelionykh_drakonov a hpo:Organization ;
+    rdfs:label "Заповедник Валлийских зелёных драконов"@ru .
+
+hpo:Zapovednik_edinorogov a hpo:Organization ;
+    rdfs:label "Заповедник единорогов"@ru .
+
+hpo:Zapovednik_snidzhetov_imeni_Modesti_Rebnott a hpo:Organization ;
+    rdfs:label "Заповедник сниджетов имени Модести Рэбнотт"@ru .
+
+hpo:Zigmunt_Badzh a hpo:Wizard ;
+    rdfs:label "Зигмунт Бадж"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Zlatopust_Lokons a hpo:Wizard ;
+    rdfs:label "Златопуст Локонс"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:activeAt a owl:ObjectProperty .
+
+hpo:artifactInvolvedIn a owl:ObjectProperty .
+
+hpo:friendWith a owl:ObjectProperty .
+
+hpo:hasFather a owl:ObjectProperty .
+
+hpo:hasMother a owl:ObjectProperty .
+
+hpo:hasRole a owl:ObjectProperty .
+
+hpo:marriedWith a owl:ObjectProperty .
+
+hpo:memberOf a owl:ObjectProperty .
+
+hpo:participatedIn a owl:ObjectProperty .
+
+hpo:relativeOf a owl:ObjectProperty .
+
+hpo:romanceWith a owl:ObjectProperty .
+
+hpo:studiedAt a owl:ObjectProperty .
+
+hpo:takePartInEvent a owl:ObjectProperty .
+
+hpo:tookPlaceAt a owl:ObjectProperty .
+
+hpo:Albert_Saksen-Koburg-Gotskii a hpo:Character ;
+    rdfs:label "Альберт Саксен-Кобург-Готский"@ru .
+
+hpo:Aragog a hpo:Giant_spider ;
+    rdfs:label "Арагог"@ru ;
+    hpo:marriedWith hpo:Mosag ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Astoriia_Gringrass a hpo:Wizard ;
+    rdfs:label "Астория Гринграсс"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Diana_Grei a hpo:Character ;
+    rdfs:label "Диана Грей"@ru .
+
+hpo:Druella_Blek a hpo:Wizard ;
+    rdfs:label "Друэлла Блэк"@ru ;
+    hpo:marriedWith hpo:Signus_Blek_III ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Dzhinni_Uizli a hpo:Wizard ;
+    rdfs:label "Джинни Уизли"@ru .
+
+hpo:Elfinstoun_Urkhart a hpo:Wizard ;
+    rdfs:label "Элфинстоун Урхарт"@ru .
+
+hpo:Ella_Maks a hpo:Wizard ;
+    rdfs:label "Элла Макс"@ru .
+
+hpo:Ellen_Kraknell a hpo:Wizard ;
+    rdfs:label "Эллен Кракнелл"@ru .
+
+hpo:Fineas_Naidzhelus_Blek a hpo:Wizard ;
+    rdfs:label "Финеас Найджелус Блэк"@ru ;
+    hpo:marriedWith hpo:Ursula_Flint ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Fridvulfa a hpo:Giant ;
+    rdfs:label "Фридвульфа"@ru ;
+    hpo:marriedWith hpo:Mister_Khagrid,
+        hpo:Otets_Grokhkha ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Genrikh_VIII a hpo:Character ;
+    rdfs:label "Генрих VIII"@ru .
+
+hpo:Gerbert_Biork a hpo:Wizard ;
+    rdfs:label "Герберт Бёрк"@ru ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Germiona_Greindzher a hpo:Wizard ;
+    rdfs:label "Гермиона Грейнджер"@ru ;
+    hpo:marriedWith hpo:Ron_Uizli ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Iakob_Kovalski a hpo:Wizard ;
+    rdfs:label "Якоб Ковальски"@ru .
+
+hpo:Iunon_Blekvud a hpo:Wizard ;
+    rdfs:label "Юнон Блэквуд"@ru .
+
+hpo:Karkus a hpo:Giant ;
+    rdfs:label "Каркус"@ru ;
+    hpo:marriedWith hpo:Zhena_Karkusa ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Kendra_Dambldor a hpo:Wizard ;
+    rdfs:label "Кендра Дамблдор"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Khaigglbottom_razvedeny a hpo:Character ;
+    rdfs:label "Хайггльботтом (разведены)"@ru .
+
+hpo:Khanna_Abbot a hpo:Wizard ;
+    rdfs:label "Ханна Аббот"@ru ;
+    hpo:marriedWith hpo:Nevill_Dolgopups ;
+    rdfs:comment "Пол: женский"@ru .
+
+hpo:Khesper_Gamp a hpo:Wizard ;
+    rdfs:label "Хеспер Гамп"@ru ;
+    hpo:marriedWith hpo:Sirius_Blek_II ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Lisandra_Iaksli a hpo:Wizard ;
+    rdfs:label "Лисандра Яксли"@ru .
+
+hpo:Magenta_Trip a hpo:Wizard ;
+    rdfs:label "Магента Трип"@ru .
+
+hpo:Malodora_Grimm a hpo:Wizard ;
+    rdfs:label "Малодора Гримм"@ru .
+
+hpo:Margarita_Anzhuiskaia a hpo:Character ;
+    rdfs:label "Маргарита Анжуйская"@ru .
+
+hpo:Mariia_II a hpo:Muggle ;
+    rdfs:label "Мария II"@ru .
+
+hpo:Mat_bratev_Butov a hpo:Wizard ;
+    rdfs:label "Мать братьев Бутов"@ru ;
+    hpo:marriedWith hpo:Otets_bratev_Butov ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Miriam_Fig a hpo:Wizard ;
+    rdfs:label "Мириам Фиг"@ru .
+
+hpo:Missis_Goldshtein a hpo:Wizard ;
+    rdfs:label "Миссис Голдштейн"@ru ;
+    hpo:marriedWith hpo:Mister_Goldshtein ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Mister_Goldshtein a hpo:Wizard ;
+    rdfs:label "Мистер Голдштейн"@ru ;
+    hpo:marriedWith hpo:Missis_Goldshtein .
+
+hpo:Mister_Khagrid a hpo:Wizard ;
+    rdfs:label "Мистер Хагрид"@ru .
+
+hpo:Mosag a hpo:Giant_spider ;
+    rdfs:label "Мосаг"@ru ;
+    hpo:marriedWith hpo:Aragog ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Nevill_Dolgopups a hpo:Wizard ;
+    rdfs:label "Невилл Долгопупс"@ru ;
+    hpo:marriedWith hpo:Khanna_Abbot ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Nimfadora_Tonks a hpo:Wizard ;
+    rdfs:label "Нимфадора Тонкс"@ru .
+
+hpo:Otets_Grokhkha a hpo:Giant ;
+    rdfs:label "Отец Грохха"@ru ;
+    hpo:marriedWith hpo:Fridvulfa ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Otets_bratev_Butov a hpo:Wizard ;
+    rdfs:label "Отец братьев Бутов"@ru ;
+    hpo:marriedWith hpo:Mat_bratev_Butov ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ron_Uizli a hpo:Wizard ;
+    rdfs:label "Рон Уизли"@ru ;
+    hpo:marriedWith hpo:Germiona_Greindzher ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Septimus_Uizli a hpo:Wizard ;
+    rdfs:label "Септимус Уизли"@ru .
+
+hpo:Ser_Nevezuchii a hpo:Muggle ;
+    rdfs:label "Сэр Невезучий"@ru .
+
+hpo:Signus_Blek_III a hpo:Wizard ;
+    rdfs:label "Сигнус Блэк III"@ru ;
+    hpo:marriedWith hpo:Druella_Blek ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Sirius_Blek_II a hpo:Wizard ;
+    rdfs:label "Сириус Блэк II"@ru ;
+    hpo:marriedWith hpo:Khesper_Gamp ;
+    rdfs:comment "Пол: Мужской"@ru .
+
+hpo:Ursula_Flint a hpo:Wizard ;
+    rdfs:label "Урсула Флинт"@ru .
+
+hpo:Violetta_Bulstroud a hpo:Wizard ;
+    rdfs:label "Виолетта Булстроуд"@ru ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Zhena_Baruffio__1_ a hpo:Character ;
+    rdfs:label "Жена Баруффио [ 1 ]"@ru .
+
+hpo:Zhena_Karkusa a hpo:Giant ;
+    rdfs:label "Жена Каркуса"@ru ;
+    hpo:marriedWith hpo:Karkus ;
+    rdfs:comment "Пол: Женский"@ru .
+
+hpo:Zhozett_Lestreindzh a hpo:Wizard ;
+    rdfs:label "Жозетт Лестрейндж"@ru .
+
+hpo:Event a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Giant_spider a owl:Class ;
+    rdfs:subClassOf hpo:Magical_creature .
+
+hpo:Human a owl:Class ;
+    rdfs:subClassOf hpo:Character .
+
+hpo:House a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Location a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Squib a owl:Class ;
+    rdfs:subClassOf hpo:Human .
+
+hpo:Magical_creature a owl:Class ;
+    rdfs:subClassOf hpo:Character .
+
+hpo:Spell a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Centaur a owl:Class ;
+    rdfs:subClassOf hpo:Magical_creature .
+
+hpo:Character a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Giant a owl:Class ;
+    rdfs:subClassOf hpo:Magical_creature .
+
+hpo:Muggle a owl:Class ;
+    rdfs:subClassOf hpo:Human .
+
+hpo:Ghost a owl:Class ;
+    rdfs:subClassOf hpo:Magical_creature .
+
+hpo:Organization a owl:Class ;
+    rdfs:subClassOf hpo:Thing .
+
+hpo:Wizard a owl:Class ;
+    rdfs:subClassOf hpo:Human .
+

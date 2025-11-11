@@ -256,7 +256,7 @@ def link_by_titles(subject_uri: URIRef, prop: URIRef, titles: list[str], fallbac
         obj = hp_entity(slugify(t))
         if (obj, RDF.type, None) not in g:
             add_labeled_instance(obj, t, fallback_type)
-            time.sleep(RELATION_DELAY)
+            ##time.sleep(RELATION_DELAY)
         g.add((subject_uri, prop, obj))
 
 
@@ -286,7 +286,7 @@ def determine_type_for_title(title_ru: str) -> Optional[URIRef]:
     # попробуем получить страницу
     url = fandom_url(title_ru)
     soup = http_get(url)
-    time.sleep(REQUEST_DELAY)
+    ##time.sleep(REQUEST_DELAY)
     if not soup:
         detect_type_cache[title_ru] = None
         return None
@@ -314,7 +314,7 @@ def link_people_analyze(subject_uri: URIRef, prop: URIRef, titles: list[str], fa
         if (obj, RDF.type, None) not in g:
             # создаём сущность с найденным типом (или fallback)
             add_labeled_instance(obj, t, use_type)
-            time.sleep(RELATION_DELAY)
+            ##time.sleep(RELATION_DELAY)
         g.add((subject_uri, prop, obj))
 
 
@@ -439,6 +439,26 @@ def type_from_sources(info: dict, cats: set[str], page_text: str) -> URIRef:
             raw_kind = info[k]["text"].lower().strip()
             break
 
+        # --- 2) существа по виду ---
+    if raw_kind:
+        for key, cls in CREATURE_KEYWORDS.items():
+            if key in raw_kind:
+                return cls
+        if "волшебник" in raw_kind or "маг" in raw_kind:
+            return classes["Wizard"]
+        if "великан" in raw_kind:
+            return classes["Giant"]
+        if "привидение" in raw_kind or "призрак" in raw_kind:
+            return classes["Ghost"]
+        if "кентавр" in raw_kind:
+            return classes["Centaur"]
+        if "акромантул" in raw_kind:
+            return classes["Giant_spider"]
+        if "домовой" in raw_kind or "эльф" in raw_kind:
+            return classes["House_elf"]
+        if "русалк" in raw_kind:
+            return classes["Mermaid"]
+
     # человек → смотрим чистоту крови
     if raw_kind and "челов" in raw_kind:
         by_purity = classify_by_purity()
@@ -457,14 +477,6 @@ def type_from_sources(info: dict, cats: set[str], page_text: str) -> URIRef:
         if "обучался" in page_text.lower() or "хогвартс" in page_text.lower():
             return classes["Wizard"]
         return classes["Human"]
-
-    # --- 2) существа по виду ---
-    if raw_kind:
-        for key, cls in CREATURE_KEYWORDS.items():
-            if key in raw_kind:
-                return cls
-        if "волшебник" in raw_kind or "маг" in raw_kind:
-            return classes["Wizard"]
 
     # --- 3) Категории ---
     for c in cats:
@@ -498,7 +510,7 @@ def scrape_character(title_ru: str):
         return
     url = fandom_url(title_ru)
     soup = http_get(url)
-    time.sleep(REQUEST_DELAY)
+    ##time.sleep(REQUEST_DELAY)
     if not soup:
         logger.warning("Пропуск (нет доступа): %s", title_ru)
         return
@@ -563,7 +575,7 @@ def iter_category_members(category_title_ru: str, cap: int | None = None):
     seen, count = set(), 0
     while url:
         soup = http_get(url)
-        time.sleep(REQUEST_DELAY)
+        ##time.sleep(REQUEST_DELAY)
         if not soup:
             break
         for a in soup.select("a.category-page__member-link"):
@@ -587,18 +599,18 @@ def scrape_category_characters(category_title_ru: str, cap: int, delay: float = 
     logger.info("Категория персонажей: %s (cap=%s)", category_title_ru, cap)
     for title in iter_category_members(category_title_ru, cap=cap):
         scrape_character(title)
-        time.sleep(delay)
+        ##time.sleep(delay)
 
 def scrape_category_entities(category_title_ru: str, rdf_type: URIRef, cap: int, delay: float = 0.1):
     logger.info("Категория сущностей: %s → %s (cap=%s)", category_title_ru, qn(rdf_type), cap)
     for title in iter_category_members(category_title_ru, cap=cap):
         ensure_entity(title, rdf_type)
-        time.sleep(delay)
+        ##time.sleep(delay)
 
 def scrape_category_list(category_title_ru: str, want_type: URIRef, cap: int):
     url = fandom_url("Категория:" + category_title_ru)
     soup = http_get(url)
-    time.sleep(REQUEST_DELAY)
+    ##time.sleep(REQUEST_DELAY)
     if not soup:
         return
     items = []
@@ -610,7 +622,7 @@ def scrape_category_list(category_title_ru: str, want_type: URIRef, cap: int):
         items.append(title)
     for title in items[:cap]:
         ensure_entity(title, want_type)
-        time.sleep(RELATION_DELAY)
+        ##time.sleep(RELATION_DELAY)
 
 # -----------------------------
 # Семена и списки категорий
