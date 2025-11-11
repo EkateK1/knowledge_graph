@@ -17,7 +17,8 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from rdflib import Graph, Namespace, URIRef, Literal
-from rdflib.namespace import RDF, RDFS, OWL, XSD
+from rdflib.namespace import RDF, RDFS, OWL
+from typing import Optional
 
 # -----------------------------
 # ЛОГИ
@@ -232,8 +233,8 @@ def parse_infobox(soup: BeautifulSoup) -> dict:
         value = row.select_one(".pi-data-value")
         if not label or not value:
             continue
-        key = label.get_text(" ", strip=True)
-        text = value.get_text(" ", strip=True)
+        key = label.get_text(separator=" ", strip=True)
+        text = value.get_text(separator=" ", strip=True)
         links = []
         for a in value.select("a[href]"):
             href = a.get("href") or ""
@@ -257,6 +258,65 @@ def link_by_titles(subject_uri: URIRef, prop: URIRef, titles: list[str], fallbac
             add_labeled_instance(obj, t, fallback_type)
             time.sleep(RELATION_DELAY)
         g.add((subject_uri, prop, obj))
+
+
+detect_type_cache: dict[str, Optional[URIRef]] = {}
+
+# New helper: попытка определить тип сущности по её странице
+def determine_type_for_title(title_ru: str) -> Optional[URIRef]:
+    """
+    Если в графе уже есть тип — возвращаем его.
+    Иначе пробуем запросить страницу персонажа и вычислить тип через type_from_sources.
+    Кешируем результаты в detect_type_cache, чтобы не делать лишних запросов.
+    Возвращаем найденный класс или None, если не удалось определить.
+    """
+    if not title_ru:
+        return None
+    # кеш
+    if title_ru in detect_type_cache:
+        return detect_type_cache[title_ru]
+    obj = hp_entity(slugify(title_ru))
+    # если уже есть тип в графе — вернём первый найденный URIRef
+    for _, _, t in g.triples((obj, RDF.type, None)):
+        if isinstance(t, URIRef):
+            detect_type_cache[title_ru] = t
+            return t
+        # если встретился не-URIRef — игнорируем и продолжаем
+
+    # попробуем получить страницу
+    url = fandom_url(title_ru)
+    soup = http_get(url)
+    time.sleep(REQUEST_DELAY)
+    if not soup:
+        detect_type_cache[title_ru] = None
+        return None
+    # если нет инфобокса — не считаем это персональной страницей
+    if not soup.select_one(".portable-infobox"):
+        detect_type_cache[title_ru] = None
+        return None
+    info = parse_infobox(soup)
+    cats = parse_categories(soup)
+    page_text = " ".join(soup.stripped_strings)
+    rdf_type = type_from_sources(info, cats, page_text)
+    detect_type_cache[title_ru] = rdf_type
+    return rdf_type
+
+
+# Новая функция: для супругов — не назначаем сразу fallback, а пытаемся проанализировать каждого по имени/ссылке
+def link_people_analyze(subject_uri: URIRef, prop: URIRef, titles: list[str], fallback_type: URIRef):
+    for t in titles:
+        if should_skip_title(t):
+            continue
+        # попытаемся определить тип через страницу
+        detected_type = determine_type_for_title(t)
+        use_type = detected_type or fallback_type
+        obj = hp_entity(slugify(t))
+        if (obj, RDF.type, None) not in g:
+            # создаём сущность с найденным типом (или fallback)
+            add_labeled_instance(obj, t, use_type)
+            time.sleep(RELATION_DELAY)
+        g.add((subject_uri, prop, obj))
+
 
 # -----------------------------
 # 3) Маппинг полей инфобокса -> свойства/классы
@@ -357,7 +417,7 @@ def type_from_sources(info: dict, cats: set[str], page_text: str) -> URIRef:
     """
 
     # --- вспомогательная функция для поля "Чистота крови" ---
-    def classify_by_purity() -> URIRef | None:
+    def classify_by_purity() -> Optional[URIRef]:
         purity = (info.get("Чистота крови", {}) or {}).get("text", "")
         purity = purity.lower()
         if not purity:
@@ -450,7 +510,7 @@ def scrape_character(title_ru: str):
 
     info = parse_infobox(soup)
     cats = parse_categories(soup)  # реальные категории
-    rdf_type = type_from_sources(info, cats, soup.get_text(" ", strip=True))
+    rdf_type = type_from_sources(info, cats, soup.get_text(separator=" ", strip=True))
     subj = ensure_entity(title_ru, rdf_type)
 
     # метаданные
@@ -465,6 +525,24 @@ def scrape_character(title_ru: str):
         if prop_key in ("type_hint", "sex_hint", "blood_status_hint") or prop_key not in obj_props:
             continue
         prop_uri = obj_props[prop_key]
+        # для персональных связей (супруг/а, отец, мать, друзья, роман, родственники)
+        # пытаемся анализировать тип связанного по его странице, а не ставить
+        # сразу общий fallback-class
+        PERSON_RELATIONS = {"marriedWith", "hasFather", "hasMother", "friendWith", "romanceWith", "relativeOf"}
+        if prop_key in PERSON_RELATIONS:
+            if val["links"]:
+                link_people_analyze(subj, prop_uri, val["links"], fallback_cls)
+            else:
+                v = val["text"]
+                if not v or should_skip_title(v):
+                    continue
+                detected = determine_type_for_title(v)
+                use_type = detected or fallback_cls
+                obj = ensure_entity(v, use_type)
+                g.add((subj, prop_uri, obj))
+            continue
+
+        # прочие связи: прежняя логика
         if val["links"]:
             link_by_titles(subj, prop_uri, val["links"], fallback_cls)
         else:
@@ -569,7 +647,7 @@ def main():
     # семена персонажей
     for name in CHAR_SEED:
         scrape_character(name)
-        time.sleep(0.4)
+        # time.sleep(0.4)
 
     # массовые категории персонажей
     for cat in PERSON_CATS:
